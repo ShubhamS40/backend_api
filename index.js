@@ -1,12 +1,10 @@
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 3000; // Use the PORT environment variable if available, otherwise use port 3000
+const express=require("express")
+const app=express()
+const PORT=process.env.PORT || 2000
 
-// Define your routes and middleware here
-
-app.get('/', (req, res) => {
-  res.json(
-    
+app.use("/",(req,res)=>{
+  res.send(
+  
     {
     "status": "ok",
     "totalResults": 14369,
@@ -1312,9 +1310,10 @@ app.get('/', (req, res) => {
     "content": "Los talluditos, que ya llevamos un tiempo en esto, nos acordamos de una época en el que el coche eléctrico de moda, entre famosos, emprendedores, estrellas de la televisión y el cine, no era un Tesla… [+3638 chars]"
     }
     ]
-  })});
+    }
+    )
+})
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen( PORT, ()=>{
+  console.log(`server is listening on ${PORT}`);
 })
