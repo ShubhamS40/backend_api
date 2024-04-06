@@ -8,272 +8,247 @@ app.use(cors())
 app.use(express())
 app.use("/",(req,res)=>{
     res.send(
-        {
-        "status": "ok",
-        "totalResults": 57,
-        "articles": [
-        {
-        "source": {
-        "id": null,
-        "name": "Yahoo Entertainment"
-        },
-        "author": "Karen Friar",
-        "title": "Stock market today: Stocks edge up after jobs report shows more strength - Yahoo Finance",
-        "description": "Jobs report Friday finally arrives, bringing a test for stocks that have struggled in the second quarter's early going.",
-        "url": "https://finance.yahoo.com/news/live/stock-market-today-stocks-edge-up-after-jobs-report-shows-more-strength-133111514.html",
-        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/.jarB3zCo_0pVCXxqasPTQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2024-03/f813b990-f203-11ee-9ef5-028c2716dca7",
-        "publishedAt": "2024-04-05T14:24:03Z",
-        "content": "Stocks nudged higher on Friday, headed for a reprieve from losses as jittery investors digested the crucial monthly jobs report and kept one eye on surging oil prices.\r\nThe Dow Jones Industrial Avera… [+8525 chars]"
-        },
-        {
-        "source": {
-        "id": "financial-times",
-        "name": "Financial Times"
-        },
-        "author": null,
-        "title": "US jobs growth of 303,000 far outstrips expectations - Financial Times",
-        "description": "Non-farm payrolls data come as Federal Reserve considers when to cut rates",
-        "url": "https://www.ft.com/content/d536f588-a307-4c89-9ae6-1f53686ae347",
-        "urlToImage": null,
-        "publishedAt": "2024-04-05T13:50:14Z",
-        "content": null
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "CNBC"
-        },
-        "author": "Ashley Capoot",
-        "title": "Teladoc CEO departs the company after stock's 95% fall from 2021 highs - CNBC",
-        "description": "Teladoc Health on Friday announced the sudden departure of CEO Jason Gorevic",
-        "url": "https://www.cnbc.com/2024/04/05/teladoc-ceo-departs-the-company-cfo-to-serve-as-interim-head.html",
-        "urlToImage": "https://image.cnbcfm.com/api/v1/image/105898567-1557264335182img_2317r.jpg?v=1557264405&w=1920&h=1080",
-        "publishedAt": "2024-04-05T13:02:47Z",
-        "content": "Teladoc Health on Friday announced the sudden departure of CEO Jason Gorevic, who is leaving his role as head of the company effective immediately, according to a release.\r\nThe company's board of dir… [+1741 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "Fox Business"
-        },
-        "author": "Greg Norman, Breck Dumas",
-        "title": "Apple laying off 614 California workers after scrapping electric car project - Fox Business",
-        "description": "Apple has informed California officials that it is laying off 614 workers in the state, months after it reportedly canceled its electric car project.",
-        "url": "https://www.foxbusiness.com/economy/apple-laying-off-614-california-workers-after-scrapping-electric-car-project",
-        "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2024/04/0/0/Apple-Store-California.jpg?ve=1&tl=1",
-        "publishedAt": "2024-04-05T13:01:00Z",
-        "content": "Apple is laying off 614 workers in California following reports that emerged earlier this year that the tech giant is abandoning its effort to build an electric car. \r\nA state filing from Apple shows… [+2353 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "Yahoo Entertainment"
-        },
-        "author": "Yongchang Chin and Alex Longley",
-        "title": "Oil Holds Above $90 After Middle East Tensions Push Brent Higher - Yahoo Finance",
-        "description": "(Bloomberg) -- Oil held onto Thursday’s large jump as escalating tensions in the Middle East catapulted prices past the $90-a-barrel threshold.Most Read from...",
-        "url": "https://finance.yahoo.com/news/oil-rises-further-middle-east-232803117.html",
-        "urlToImage": "https://s.yimg.com/ny/api/res/1.2/fjrWVUzaJ25ziKsNmRLdEA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/bloomberg_markets_842/b697e8648933a1835edfb4d15bb357d6",
-        "publishedAt": "2024-04-05T12:58:49Z",
-        "content": "(Bloomberg) -- Oil held onto Thursdays large jump as escalating tensions in the Middle East catapulted prices past the $90-a-barrel threshold.\r\nMost Read from Bloomberg\r\nThe global benchmark Brent ea… [+2701 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "Investor's Business Daily"
-        },
-        "author": "Investor's Business Daily",
-        "title": "Johnson & Johnson To Buy Shockwave Medical For $13.1 Billion - Investor's Business Daily",
-        "description": null,
-        "url": "https://www.investors.com/news/technology/johnson-johnson-to-buy-shockwave-medical-13-1-billion/",
-        "urlToImage": null,
-        "publishedAt": "2024-04-05T12:55:00Z",
-        "content": null
-        },
-        {
-        "source": {
-        "id": "usa-today",
-        "name": "USA Today"
-        },
-        "author": "USA TODAY",
-        "title": "Powerball jackpot hops to $1.23 billion: When is next lottery drawing? - USA TODAY",
-        "description": null,
-        "url": "https://www.usatoday.com/story/money/lottery/2024/04/05/powerball-drawing-lottery-jackpot/73214381007/",
-        "urlToImage": null,
-        "publishedAt": "2024-04-05T12:39:55Z",
-        "content": null
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "CNBC"
-        },
-        "author": "Natasha Turak",
-        "title": "McDonald's will buy all 225 restaurants from Israel franchise following pro-Palestinian boycott fallout - CNBC",
-        "description": "McDonald's signed a deal to purchase all 225 of the restaurants that comprise its Israel franchise, the American fast-food chain announced.",
-        "url": "https://www.cnbc.com/2024/04/05/israel-boycott-mcdonalds-will-buy-all-225-restaurants-from-franchise.html",
-        "urlToImage": "https://image.cnbcfm.com/api/v1/image/105079239-GettyImages-929107440.jpg?v=1615980739&w=1920&h=1080",
-        "publishedAt": "2024-04-05T12:33:53Z",
-        "content": "McDonald's signed a deal to purchase all 225 of the restaurants that comprise its Israel franchise, the American fast-food chain announced, following months of dramatically lower sales due to pro-Pal… [+5721 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "New York Post"
-        },
-        "author": "Snejana Farberov",
-        "title": "FAA probes near miss between Southwest jet, LaGuardia's air traffic control tower: 'Go around!' - New York Post ",
-        "description": "An air traffic controller was heard yelling to the pilot to “go around!”",
-        "url": "https://nypost.com/2024/04/05/us-news/faa-probes-planes-close-call-at-laguardia-airport/",
-        "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2024/04/79517360.jpg?quality=75&strip=all&w=1024",
-        "publishedAt": "2024-04-05T12:17:24Z",
-        "content": "The Federal Aviation Administration is investigating why a Southwest Airlines flight veered off course and had a frighteningly close call last month with LaGuardia Airports air traffic control tower.… [+1455 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "[Removed]"
-        },
-        "author": null,
-        "title": "[Removed]",
-        "description": "[Removed]",
-        "url": "https://removed.com",
-        "urlToImage": null,
-        "publishedAt": "1970-01-01T00:00:00Z",
-        "content": "[Removed]"
-        },
-        {
-        "source": {
-        "id": "reuters",
-        "name": "Reuters"
-        },
-        "author": "Reuters",
-        "title": "Yellen says global concerns growing over China's excess industrial capacity - Reuters",
-        "description": null,
-        "url": "https://www.reuters.com/business/yellen-launches-contentious-meetings-chinese-excess-production-threat-2024-04-05/",
-        "urlToImage": null,
-        "publishedAt": "2024-04-05T11:46:27Z",
-        "content": null
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "Variety"
-        },
-        "author": "Todd Spangler",
-        "title": "Disney Password-Sharing Crackdown for Disney+, Hulu, ESPN+ Accounts Will Begin in June - Variety",
-        "description": "Bob Iger said Disney's streaming password-sharing crackdown will start in a few markets in June, before expanding to a \"full rollout\" in September.",
-        "url": "https://variety.com/2024/digital/news/when-disney-password-sharing-crackdown-starts-1235961498/",
-        "urlToImage": "https://variety.com/wp-content/uploads/2024/03/Disney-Logo_March-2024.png?w=1000&h=563&crop=1",
-        "publishedAt": "2024-04-05T11:20:00Z",
-        "content": "Some subscribers to Disney‘s streaming services will start seeing some new messaging up this summer: Pay up for anyone outside your main household who’s illicitly piggybacking on the services — or fa… [+4096 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "MarketWatch"
-        },
-        "author": "MarketWatch",
-        "title": "Nvidia's stall means momentum trade has lost its mojo. Here's what to do. - MarketWatch",
-        "description": null,
-        "url": "https://www.marketwatch.com/story/nvidias-stall-means-the-momentum-trade-has-lost-its-mojo-heres-what-investors-should-do-99e61d89",
-        "urlToImage": null,
-        "publishedAt": "2024-04-05T10:32:00Z",
-        "content": null
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "CNBC"
-        },
-        "author": "Sam Meredith",
-        "title": "Fed's Kashkari raises prospect of zero rate cuts — but Goldman says that would be 'very surprising' - CNBC",
-        "description": "Jan Hatzius, chief economist at Goldman Sachs, said Friday that he still expects three interest rate cuts from the Federal Reserve this year.",
-        "url": "https://www.cnbc.com/2024/04/05/top-goldman-economist-downplays-prospect-of-zero-fed-rate-cuts-in-2024.html",
-        "urlToImage": "https://image.cnbcfm.com/api/v1/image/107215254-1679877741720-gettyimages-1139104457-_dsc8696_20190329112239459.jpeg?v=1712312079&w=1920&h=1080",
-        "publishedAt": "2024-04-05T10:31:04Z",
-        "content": "Goldman Sachs Chief Economist Jan Hatzius on Friday said that he still expects the Federal Reserve to implement three interest rate cuts this year, adding that he would be \"very surprised\" if the U.S… [+2784 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "Vox"
-        },
-        "author": "Umair Irfan",
-        "title": "How the 2024 total solar eclipse affects the whole power grid - Vox.com",
-        "description": "US solar power has more than doubled since the last eclipse. What will happen during this one?",
-        "url": "https://www.vox.com/24121090/solar-eclipse-2024-power-grid-energy-electricity-ercot",
-        "urlToImage": "https://cdn.vox-cdn.com/thumbor/eKB_mXzQi7kgDcf6HeZydIhQhxs=/0x30:5464x2891/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25371077/GettyImages_1452341899.jpg",
-        "publishedAt": "2024-04-05T10:30:00Z",
-        "content": "As the moon passes in front of the sun on April 8, its shadow will knock down solar power production in a sweeping band across the United States from Texas to Maine, home to more than 31 million peop… [+7211 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "CNBC"
-        },
-        "author": "Michael Wayland",
-        "title": "Hyundai's Genesis brand is a dark horse in U.S. luxury vehicle market - CNBC",
-        "description": "Hyundai's Genesis launched in the U.S. nearly eight years ago to much skepticism but has proven itself worthy in the domestic luxury market.",
-        "url": "https://www.cnbc.com/2024/04/05/hyundais-genesis-brand-is-a-dark-horse-in-us-luxury-vehicle-market.html",
-        "urlToImage": "https://image.cnbcfm.com/api/v1/image/107396270-1712163886191-IMG_6511.jpg?v=1712163990&w=1920&h=1080",
-        "publishedAt": "2024-04-05T10:00:01Z",
-        "content": "NEW YORK When Hyundai Motor launched its Genesis luxury brand domestically in 2016, many were skeptical the South Korean automaker recognized mainly for budget vehicles at the time knew what it was d… [+4772 chars]"
-        },
-        {
-        "source": {
-        "id": "fortune",
-        "name": "Fortune"
-        },
-        "author": "Larry Neumeister, The Associated Press",
-        "title": "87-year-old billionaire Joe Lewis gets no prison time after pleading guilty in insider trading case - Fortune",
-        "description": "Judge G.L. Clarke cited Lewis' decision to promptly come to the United States to face charges and his failing health, along with a lifetime of good works.",
-        "url": "https://fortune.com/2024/04/05/87-year-old-billionaire-joe-lewis-no-prison-time-pleading-guilty-insider-trading-case/",
-        "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2024/04/AP24095655975922-e1712306882518.jpg?resize=1200,600",
-        "publishedAt": "2024-04-05T08:58:00Z",
-        "content": "British billionaire Joe Lewis, whose family trust owns the Tottenham Hotspur soccer club, will not spend any time in prison after pleading guilty to insider trading and conspiracy charges in New York… [+3938 chars]"
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "Tipranks.com"
-        },
-        "author": "TipRanks",
-        "title": "AMD Stock: Key Insights for Investors - TipRanks.com - TipRanks",
-        "description": null,
-        "url": "https://www.tipranks.com/news/amd-stock-key-insights-for-investors",
-        "urlToImage": null,
-        "publishedAt": "2024-04-05T08:05:24Z",
-        "content": null
-        },
-        {
-        "source": {
-        "id": null,
-        "name": "CNBC"
-        },
-        "author": "Dylan Butts",
-        "title": "Nvidia plans to build a $200 million AI center in Indonesia amid push into Southeast Asia - CNBC",
-        "description": "Nvidia is planning to build an AI center worth $200 million in Indonesia with a local telecoms giant Indosat Ooredoo Hutchison, an Indonesian minister has said.",
-        "url": "https://www.cnbc.com/2024/04/05/nvidia-to-build-a-200-million-ai-center-in-indonesia-amid-southeast-asia-push.html",
-        "urlToImage": "https://image.cnbcfm.com/api/v1/image/107376935-17086199322024-02-22t112948z_193613553_rc2m76adcywy_rtrmadp_0_nvidia-china.jpeg?v=1709922969&w=1920&h=1080",
-        "publishedAt": "2024-04-05T06:42:06Z",
-        "content": "Nvidia is planning to build a $200 million artificial intelligence center in Indonesia in partnership with local telco giant Indosat Ooredoo Hutchison, as the U.S. tech darling continues its push int… [+2260 chars]"
-        },
-        {
-        "source": {
-        "id": "reuters",
-        "name": "Reuters"
-        },
-        "author": "Reuters",
-        "title": "Morning Bid: Middle East tensions spook markets - Reuters",
-        "description": "A look at the day ahead in European and global markets from Rae Wee",
-        "url": "https://www.reuters.com/markets/europe/global-markets-view-europe-2024-04-05/",
-        "urlToImage": "https://www.reuters.com/resizer/v2/QU5M7Z6VBNIYRLQLCPKLSIFTGA.jpg?auth=c087be60b242eff4039cff977f28cfa4d6a0fda36a9a4409b0d3b13ec1e254a8&width=1920&height=1005&smart=true",
-        "publishedAt": "2024-04-05T05:28:07Z",
-        "content": null
-        }
-        ]
-        }
+{
+"status": "ok",
+"totalResults": 18,
+"articles": [
+{
+"source": {
+"id": "google-news-in",
+"name": "Google News (India)"
+},
+"author": "Mint",
+"title": "'Pakistan mein ghus kar maarengey': Rajnath Singh reacts to India's link to ‘targeted killings’ | Mint - Mint",
+"description": null,
+"url": "https://news.google.com/rss/articles/CBMikQFodHRwczovL3d3dy5saXZlbWludC5jb20vbmV3cy9pbmRpYS9wYWtpc3Rhbi1tZWluLWdodXMta2FyLW1hYXJlbmdleS1yYWpuYXRoLXNpbmdoLXJlYWN0cy10by1pbmRpYXMtbGluay10by10YXJnZXRlZC1raWxsaW5ncy0xMTcxMjMyMjE1MTk1My5odG1s0gGVAWh0dHBzOi8vd3d3LmxpdmVtaW50LmNvbS9uZXdzL2luZGlhL3Bha2lzdGFuLW1laW4tZ2h1cy1rYXItbWFhcmVuZ2V5LXJham5hdGgtc2luZ2gtcmVhY3RzLXRvLWluZGlhcy1saW5rLXRvLXRhcmdldGVkLWtpbGxpbmdzL2FtcC0xMTcxMjMyMjE1MTk1My5odG1s?oc=5",
+"urlToImage": null,
+"publishedAt": "2024-04-05T13:03:45+00:00",
+"content": null
+},
+{
+"source": {
+"id": "al-jazeera-english",
+"name": "Al Jazeera English"
+},
+"author": "Abid Hussain",
+"title": "Is India behind targeted killings in Pakistan? What we know",
+"description": "Pakistani officials tell Al Jazeera at least eight killings could be linked to India. New Delhi rejects these charges.",
+"url": "https://www.aljazeera.com/news/2024/4/5/is-india-behind-targeted-killings-in-pakistan-what-we-know",
+"urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/04/saleem-rehmani-farooq-khan-1712313206.jpg?resize=1920%2C1440",
+"publishedAt": "2024-04-05T12:40:08Z",
+"content": "Islamabad, Pakistan  Since June 2021, Pakistan has tracked and accused Indian intelligence agencies of multiple attempts some successful at assassinating individuals New Delhi views as terrorists she… [+7695 chars]"
+},
+{
+"source": {
+"id": "google-news-in",
+"name": "Google News (India)"
+},
+"author": "NDTV",
+"title": "Rahul Gandhi's Bet On India's Record Market Rally Made Him 28% Richer - NDTV",
+"description": null,
+"url": "https://news.google.com/rss/articles/CBMiZmh0dHBzOi8vd3d3Lm5kdHYuY29tL2luZGlhLW5ld3MvcmFodWwtZ2FuZGhpLWJldC1vbi1pbmRpYS1yZWNvcmQtbWFya2V0LXJhbGx5LW1ha2VzLWhpbS1yaWNoZXItNTM4MTE2OdIBbGh0dHBzOi8vd3d3Lm5kdHYuY29tL2luZGlhLW5ld3MvcmFodWwtZ2FuZGhpLWJldC1vbi1pbmRpYS1yZWNvcmQtbWFya2V0LXJhbGx5LW1ha2VzLWhpbS1yaWNoZXItNTM4MTE2OS9hbXAvMQ?oc=5",
+"urlToImage": null,
+"publishedAt": "2024-04-05T11:49:03+00:00",
+"content": null
+},
+{
+"source": {
+"id": "google-news-in",
+"name": "Google News (India)"
+},
+"author": "The Hindu",
+"title": "India removes export curbs on specified quantity of onions, rice, wheat flour, sugar for Maldives - The Hindu",
+"description": null,
+"url": "https://news.google.com/rss/articles/CBMimQFodHRwczovL3d3dy50aGVoaW5kdS5jb20vbmV3cy9uYXRpb25hbC9pbmRpYS1yZW1vdmVzLWV4cG9ydC1jdXJicy1vbi1zcGVjaWZpZWQtcXVhbnRpdHktb2Ytb25pb25zLXJpY2Utd2hlYXQtZmxvdXItc3VnYXItZm9yLW1hbGRpdmVzL2FydGljbGU2ODAzMjE4My5lY2XSAZ4BaHR0cHM6Ly93d3cudGhlaGluZHUuY29tL25ld3MvbmF0aW9uYWwvaW5kaWEtcmVtb3Zlcy1leHBvcnQtY3VyYnMtb24tc3BlY2lmaWVkLXF1YW50aXR5LW9mLW9uaW9ucy1yaWNlLXdoZWF0LWZsb3VyLXN1Z2FyLWZvci1tYWxkaXZlcy9hcnRpY2xlNjgwMzIxODMuZWNlL2FtcC8?oc=5",
+"urlToImage": null,
+"publishedAt": "2024-04-05T11:26:00+00:00",
+"content": null
+},
+{
+"source": {
+"id": "google-news-in",
+"name": "Google News (India)"
+},
+"author": "The Indian Express",
+"title": "Delhi News Live Updates: Court allows CBI to interrogate K Kavitha in excise policy case - The Indian Express",
+"description": null,
+"url": "https://news.google.com/rss/articles/CBMiX2h0dHBzOi8vaW5kaWFuZXhwcmVzcy5jb20vYXJ0aWNsZS9jaXRpZXMvZGVsaGkvZGVsaGktbmV3cy1saXZlLXVwZGF0ZXMtYXJ2aW5kLWtlanJpd2FsLTkyNTI0ODkv0gFkaHR0cHM6Ly9pbmRpYW5leHByZXNzLmNvbS9hcnRpY2xlL2NpdGllcy9kZWxoaS9kZWxoaS1uZXdzLWxpdmUtdXBkYXRlcy1hcnZpbmQta2Vqcml3YWwtOTI1MjQ4OS9saXRlLw?oc=5",
+"urlToImage": null,
+"publishedAt": "2024-04-05T10:19:00+00:00",
+"content": null
+},
+{
+"source": {
+"id": "cbc-news",
+"name": "CBC News"
+},
+"author": "CBC News",
+"title": "India, Pakistan attempted to interfere in Canada's elections: CSIS | CBC News",
+"description": "The governments of Pakistan and India attempted to interfere in Canada's elections in 2019 and 2021, Canada's spy agency said in documents made public late Thursday night.",
+"url": "http://www.cbc.ca/news/politics/pakistan-india-elections-canada-1.7164378",
+"urlToImage": "https://i.cbc.ca/1.6976086.1695692596!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/trudeau-and-modi.jpg",
+"publishedAt": "2024-04-05T08:07:22.8616571Z",
+"content": "The governments of India and Pakistan attempted to interfere in Canada's federal elections in 2019 and 2021, Canada's spy agency said in documents made public late Thursday night.\r\nIn 2021, the gover… [+6203 chars]"
+},
+{
+"source": {
+"id": "espn",
+"name": "ESPN"
+},
+"author": null,
+"title": "Seton Hall rallies late, tops Indiana State to win NIT title - ESPN",
+"description": "Trailing by seven with 2:50 left, Seton Hall scored the final nine points to beat Indiana State for its first NIT championship Thursday night.",
+"url": "https://www.espn.com/mens-college-basketball/story/_/id/39877177/seton-hall-rallies-late-tops-indiana-state-win-nit-title",
+"urlToImage": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0405%2Fr1314394_1296x729_16%2D9.jpg",
+"publishedAt": "2024-04-05T01:56:00Z",
+"content": "INDIANAPOLIS -- Dre Davis scored on a layup with 16 seconds left Friday night to cap Seton Hall's decisive late run, giving the Pirates a 79-77 victory over Indiana State and their first NIT champion… [+1598 chars]"
+},
+{
+"source": {
+"id": "fortune",
+"name": "Fortune"
+},
+"author": "Emma Hinchliffe, Paige McGlauflin",
+"title": "Why a former SoftBank partner is tackling mid-career drop-off for working mothers",
+"description": "Former SoftBank partner and Facebook India director Kirthiga Reddy is the cofounder of Laddrr, a resource hub for working mothers aiming to prevent mid-career drop-off.",
+"url": "https://fortune.com/2022/06/01/former-softbank-partner-tackling-mid-career-drop-off-for-working-mothers/",
+"urlToImage": "https://content.fortune.com/wp-content/uploads/2022/05/Kirthiga1.jpg?resize=1200,600",
+"publishedAt": "2022-06-01T13:22:34Z",
+"content": "Skip to Content"
+},
+{
+"source": {
+"id": "the-hindu",
+"name": "The Hindu"
+},
+"author": "Ananth Krishnan",
+"title": "Dalai Lama’s close aides targeted on Pegasus spyware list",
+"description": "‘Analysis indicates that the Indian govt. was selecting the potential targets’",
+"url": "https://www.thehindu.com/news/international/dalai-lamas-close-aides-targeted-on-pegasus-spyware-list/article35474285.ece",
+"urlToImage": "https://www.thehindu.com/news/international/dvshb0/article35474284.ece/ALTERNATES/LANDSCAPE_615/thjc-DalaiLama",
+"publishedAt": "2021-07-22T15:47:01Z",
+"content": "Several of the top India-based aides to the Tibetan spiritual leader, the Dalai Lama, figure on the list of potential targets for spying using the Pegasus spyware, according to a report on Thursday. … [+2399 chars]"
+},
+{
+"source": {
+"id": "rte",
+"name": "RTE"
+},
+"author": "RTÉ News",
+"title": "UK continues with reopening plan despite concerns",
+"description": "British ministers are pushing on with a major easing of restrictions on Monday despite concerns over the Indian variant of coronavirus, as they were criticised for allowing the strain's import.",
+"url": "https://www.rte.ie/news/uk/2021/0515/1221764-uk-indian-variant/",
+"urlToImage": "https://img.rasset.ie/0016cb40-1600.jpg",
+"publishedAt": "2021-05-15T09:33:48Z",
+"content": "British ministers are pushing on with a major easing of restrictions on Monday despite concerns over the Indian variant of coronavirus, as they were criticised for allowing the strain's import.\r\nPrim… [+5066 chars]"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Rajat Pandit",
+"title": "Army explores procurement of 350 light tanks for mountainous terrain after border standoff with China",
+"description": "India News:  The Army is now exploring the possibility of procuring 350 light tanks, which can also be transported by air, to augment its firepower in high-altitu",
+"url": "http://timesofindia.indiatimes.com/india/army-explores-procurement-of-350-light-tanks-for-mountainous-terrain-after-border-standoff-with-china/articleshow/82217825.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-82217908,width-1070,height-580,imgsize-264639,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2021-04-23T08:29:00Z",
+"content": "Army explores procurement of 350 light tanks for mountainous terrain after border standoff with China\r\n<ul><li>News</li>\r\n<li>India News</li>\r\n<li>Army explores procurement of 350 light tanks for mou… [+58 chars]"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Times Of India",
+"title": "PBKS vs MI Live Score, IPL 2021: Mumbai Indians seek consistency; Punjab Kings eye return to winning ways",
+"description": "IPL Live Score: Mumbai Indians seek consistency; Punjab Kings eye return to winning ways. Stay with TOI to get IPL live score, playing 11, scorecard, highlights and ball by ball score updates of the 17th IPL match between Punjab Kings and Mumbai Indians.",
+"url": "http://timesofindia.indiatimes.com/sports/cricket/ipl/live-blog/punjab-kings-vs-mumbai-indians-pbks-vs-mi-live-score-ipl-2021-17th-match-chennai/liveblog/82214950.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-82214950,width-1070,height-580,imgsize-157009,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2021-04-23T05:44:49Z",
+"content": "Ravi Bishnoi return on the cards?\r\nDeepak Hooda showed what he is capable of, but greater consistency would be needed from him if the team has to prosper. They bet on Australian pace imports Jhye Ric… [+3131 chars]"
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "PTI",
+"title": "Zydus Cadila gets DCGI nod for hepatitis drug for Covid-19 treatment",
+"description": "India News: Drug firm Zydus Cadila on Friday said it has received restricted emergency use approval from the Indian drug regulator for the use of Pegylated Interf",
+"url": "http://timesofindia.indiatimes.com/india/zydus-cadila-gets-dcgi-nod-for-hepatitis-drug-for-covid-19-treatment/articleshow/82214909.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-82214921,width-1070,height-580,imgsize-98052,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2021-04-23T05:43:00Z",
+"content": null
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Bloomberg",
+"title": "Even record death toll may hide extent of India’s Covid crisis",
+"description": "India News: Bodies piling up at crematoriums and burial grounds across India are sparking concerns that the death toll from a ferocious new Covid-19 wave may be m.",
+"url": "http://timesofindia.indiatimes.com/india/even-record-death-toll-may-hide-extent-of-indias-covid-crisis/articleshow/82213444.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-82213819,width-1070,height-580,imgsize-232887,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2021-04-23T04:41:00Z",
+"content": null
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Dipak K Dash",
+"title": "Government to provide 5 kg free food grains to poor for May & June",
+"description": "India News: The government on Friday announced to provide 5 kg free food grains to the poor for May and June 2021. This will cover nearly 80 crore beneficiaries u",
+"url": "http://timesofindia.indiatimes.com/india/government-to-provide-5-kg-free-food-grains-to-poor-for-may-june/articleshow/82213582.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-82213583,width-1070,height-580,imgsize-1921513,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2021-04-23T04:23:00Z",
+"content": null
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "TIMESOFINDIA.COM",
+"title": "'Inappropriate': PM Modi objects to 'protocol break' during meeting; Delhi CM expresses regret",
+"description": "India News: Delhi chief minister Arvind Kejriwal on Friday faced flak for sharing a live telecast of an \"in-house\" meeting with Prime Minister Narendra Modi where",
+"url": "http://timesofindia.indiatimes.com/india/delhi-cmo-expresses-regret-over-televised-address-during-meeting-with-pm-modi/articleshow/82213159.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-82213159,width-1070,height-580,imgsize-134672,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2021-04-23T03:54:00Z",
+"content": null
+},
+{
+"source": {
+"id": "the-times-of-india",
+"name": "The Times of India"
+},
+"author": "Times Of India",
+"title": "Coronavirus in India live updates: Zydus' Virafin gets DCGI nod for Covid treatment",
+"description": "In yet another grim milestone, India recorded 3.3 lakh new Covid-19 cases, and 2,263 deaths in a day. Meanwhile, active cases crossed the 24-lakh mar",
+"url": "http://timesofindia.indiatimes.com/india/coronavirus-in-india-covid-19-vaccine-cases-lockdown-live-updates-23-april-2021/liveblog/82205841.cms",
+"urlToImage": "https://static.toiimg.com/thumb/msid-82205841,width-1070,height-580,imgsize-148788,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+"publishedAt": "2021-04-22T16:20:06Z",
+"content": "Zydus Cadila gets DCGI nod for hepatitis drug for Covid-19 treatment\r\nMake Covid-19 vaccination affordable, accessible through Jan Aushadi scheme: IMA\r\nThe IMA has demanded that the Covid-19 vaccine … [+4487 chars]"
+},
+{
+"source": {
+"id": "espn-cric-info",
+"name": "ESPN Cric Info"
+},
+"author": null,
+"title": "I'm fighting my own benchmarks - R Ashwin | ESPNcricinfo.com",
+"description": "India's No. 1 offspinner talks to Manjrekar on his form abroad, injuries and more | ESPNcricinfo.com",
+"url": "http://www.espncricinfo.com/story/_/id/29102228/fighting-my-own-benchmarks-r-ashwin",
+"urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219773_1296x729.jpg",
+"publishedAt": "2020-04-25T03:00:09Z",
+"content": "R Ashwin has said that he is \"fighting my own benchmarks\" because his Test performances overseas are being measured against his heroics in India. Despite being the country's best long-form spinner in… [+3347 chars]"
+}
+]
+}
+
        
         )
 })
