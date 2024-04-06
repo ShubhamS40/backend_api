@@ -1,1322 +1,1320 @@
 const express=require("express")
 const app=express()
-const PORT=process.env.PORT || 2000
 const cors=require("cors")
+const PORT= process.env.PORT ||2000
+
+
 app.use(cors())
-app.use(express.json())
-
+app.use(express())
 app.use("/",(req,res)=>{
-  res.send(
-  
-    {
-    "status": "ok",
-    "totalResults": 14369,
-    "articles": [
-    {
-    "source": {
-    "id": null,
-    "name": "Tjock.se"
-    },
-    "author": "Roger Åberg",
-    "title": "Klocka med känsla av testbild",
-    "description": "Från Mido\n\n\n\n\n\n\n\n\n\n\n\n\nMido har en modell som de kallar för Multifort TV Big Date. Det är en riktigt trevlig klocka där boetten har en fin rundning som bär smak av en klassisk tjock-tv från 70- eller 80-talet. Nu släpper man en specialversion där urtavlan likn…",
-    "url": "https://tjock.se/garderoben/klocka-med-kansla-av-testbild/466291/",
-    "urlToImage": "https://static.feber.se/article_images/58/56/08/585608.jpeg",
-    "publishedAt": "2024-04-03T17:40:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+32159 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "electrek.co",
-    "title": "Ford takes second in US EV market after sales climb 86% as lower prices take effect",
-    "description": "Ford is starting 2024 off strong with EV sales up 86% through the first three months. The growth was enough for Ford to place second in the US EV market behind only Tesla. Ford’s sales surge comes after slashing prices earlier this year. Ford takes second beh…",
-    "url": "https://biztoc.com/x/cfa1ab35005e2b26",
-    "urlToImage": "https://c.biztoc.com/p/cfa1ab35005e2b26/og.webp",
-    "publishedAt": "2024-04-03T17:38:10Z",
-    "content": "Ford is starting 2024 off strong with EV sales up 86% through the first three months. The growth was enough for Ford to place second in the US EV market behind only Tesla. Fords sales surge comes aft… [+281 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "thestreet.com",
-    "title": "Jim Cramer has some harsh criticism for Cathie Wood",
-    "description": "Fast Facts CNBC's Jim Cramer openly criticized fellow investor Cathie Wood in a tweet The two disagree about the future of EVs The exchange comes alongside more disappointing Tesla news For the last few years, one of Tesla's (TSLA) biggest cheerleaders has be…",
-    "url": "https://biztoc.com/x/8500030b45cb043c",
-    "urlToImage": "https://c.biztoc.com/p/8500030b45cb043c/s.webp",
-    "publishedAt": "2024-04-03T17:34:20Z",
-    "content": "Fast FactsCNBC's Jim Cramer openly criticized fellow investor Cathie Wood in a tweetThe two disagree about the future of EVsThe exchange comes alongside more disappointing Tesla newsFor the last few … [+291 chars]"
-    },
-    {
-    "source": {
-    "id": "lenta",
-    "name": "Lenta"
-    },
-    "author": "Андрей Ставицкий",
-    "title": "Продажи Tesla рухнули впервые с 2020 года",
-    "description": "Продажи автомобилей Tesla рухнули впервые с 2020 года. В отчете компании говорится, что за первый квартал 2023 года было продано 386 810 электрокаров. Это не соответствует прогнозу аналитиков, которые предсказывали рост. За год продажи автомобилей упали на 8,…",
-    "url": "https://lenta.ru/news/2024/04/03/tesla-falls/",
-    "urlToImage": "https://icdn.lenta.ru/images/2024/04/03/12/20240403122031690/share_d6127ac47a301f7e96aef27f66f47853.jpg",
-    "publishedAt": "2024-04-03T17:31:26Z",
-    "content": "Tesla 2020 . Bloomberg.\r\n , 2023 386 810 . , . 8,5 . , .\r\n Tesla , Model 3. Model Y 96 . , - .\r\n« , », Deutsche Bank . Tesla , BYD.\r\nXiaomi, 29 , , . 90 ."
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Dinheirama.com"
-    },
-    "author": "Reuters",
-    "title": "Tesla buscará locais na Índia para fábrica de veículos elétricos, diz Financial Times",
-    "description": "A Tesla (TSLA; TSLA34) enviará uma equipe à Índia este mês para avaliar locais para uma fábrica de carros elétricos proposta entre 2 bilhões de…\n------ Este artigo foi escrito por Reuters. Este artigo apareceu originalmente no site Dinheirama.A reprodução des…",
-    "url": "https://dinheirama.com/tesla-buscara-locais-na-india-para-fabrica-de-veiculos-eletricos-diz-financial-times/",
-    "urlToImage": "https://media.dinheirama.com/medias/uploads/2023/12/20231204-tesla.jpg",
-    "publishedAt": "2024-04-03T17:30:16Z",
-    "content": "4A Tesla (TSLA; TSLA34) enviará uma equipe à Índia este mês para avaliar locais para uma fábrica de carros elétricos proposta entre 2 bilhões de dólares e 3 bilhões de dólares, informou o Financial T… [+1249 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Adslzone.net"
-    },
-    "author": "Alberto García Méndez",
-    "title": "La comparativa Xiaomi SU7 Max VS Tesla Model 3 deja un claro vencedor",
-    "description": "Xiaomi pisa fuerte para convertirse en rival serio de Tesla en China. Según las primeras comparativas llevadas a cabo por medios especializados, la versión más sofisticada del SU7 es capaz de superar al Model 3 de Tesla en varias pruebas sobre el terreno. El …",
-    "url": "https://www.adslzone.net/e-movilidad/noticias-marcas-modelos/comparativa-xiaomi-tesla-coche-chino/",
-    "urlToImage": "https://www.adslzone.net/app/uploads-adslzone.net/2024/04/comparativateslaxiaomi.jpg",
-    "publishedAt": "2024-04-03T17:30:15Z",
-    "content": "El coche eléctrico que Xiaomi estrenó la semana pasada no solo ha entrado por los ojos a miles de compradores. Su interior también cumple, superando incluso las capacidades del que comúnmente se reco… [+2891 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Yahoo Entertainment"
-    },
-    "author": null,
-    "title": "Tesla Just Announced Its First Sales Drop in Years",
-    "description": null,
-    "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_e1ce2ade-5fb4-46db-ba41-da2bfb0f9c60",
-    "urlToImage": null,
-    "publishedAt": "2024-04-03T17:30:00Z",
-    "content": "If you click 'Accept all', we and our partners (including 240 who are part of the IAB Transparency &amp; Consent Framework) will also use cookies and your personal data, such as IP address, precise l… [+686 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Robb Report"
-    },
-    "author": "Bryan Hood",
-    "title": "Tesla Just Announced Its First Sales Drop in Years",
-    "description": "Tesla announced it delivered 383,000 EVs during the first quarter of 2024, which was 8.5 percent less than it moved during the same period last year.",
-    "url": "http://robbreport.com/motors/cars/tesla-announces-sharp-drop-deliveries-first-quarter-1235569091/",
-    "urlToImage": "https://robbreport.com/wp-content/uploads/2024/01/model301.jpg?w=681&h=383&crop=1",
-    "publishedAt": "2024-04-03T17:30:00Z",
-    "content": "The first quarter of 2024 went much worse for Tesla than anyone could have imagined.\r\nThe Elon Musk-fronted EV maker announced a shocking drop in quarterly sales on Tuesday, according to The New York… [+3111 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Quartz India"
-    },
-    "author": "Andy Mills",
-    "title": "Tesla's big delivery miss is a sign of tougher competition, analyst says",
-    "description": "Shelby McFaddin, an investment analyst at Motley Fool Asset Management, spoke with Quartz for the latest installment of our “Smart Investing” video series.Read more...",
-    "url": "https://qz.com/tesla-deliveries-elon-musk-ev-competition-1851384822",
-    "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/ff9a7bf348849ab9d86e37a89083a69c.jpg",
-    "publishedAt": "2024-04-03T17:24:00Z",
-    "content": "Shelby McFaddin, an investment analyst at Motley Fool Asset Management, spoke with Quartz for the latest installment of our Smart Investing video series.\r\nWatch the interview above and check out the … [+4628 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Kommersant.ru"
-    },
-    "author": null,
-    "title": "Xiaomi SU7 подвез капитализацию // Почему акции китайского холдинга подскочили в цене на 16%",
-    "description": "Капитализация Xiaomi выросла более чем на $7 млрд. Произошло это на фоне старта продаж первого электромобиля, выпущенного компанией. Он стал доступен для заказчиков 28 марта, однако с тех пор биржа в Гонконге была закрыта на пасхальные праздники. После того, …",
-    "url": "https://www.kommersant.ru/doc/6617163",
-    "urlToImage": "https://im.kommersant.ru/SocialPics/6617163_49_2536465_833039156",
-    "publishedAt": "2024-04-03T17:21:12Z",
-    "content": "Xiaomi $7 . , . 28 , . , , 16%. Xiaomi $52 . , , , General Motors Ford.\r\n ? FM « » : « . , , , , 100% . , , . \r\n Tesla, , , . , . , Xiaomi, . , , ».\r\n , Xiaomi . Bloomberg, . Tesla , 5%. . , 2024 9% … [+160 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Feber.se"
-    },
-    "author": "Wille Wilhelmsson",
-    "title": "Artister i upprop mot AI",
-    "description": "Mänskliga musiker vill inte konkurrera med generativ AI\n\n\n\n\n\n\nDen amerikanska musikorganisationen Artist Rights Alliance har tillsammans med över 200 artister skrivit ett öppet brev till verksamma inom AI-industrin där man uppmanar dessa att sluta använda AI …",
-    "url": "https://feber.se/samhalle/artister-i-upprop-mot-ai/466292/",
-    "urlToImage": "https://static.feber.se/article_images/58/56/01/585601.jpg",
-    "publishedAt": "2024-04-03T17:20:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+36518 chars]"
-    },
-    {
-    "source": {
-    "id": "rt",
-    "name": "RT"
-    },
-    "author": "RT en Español\n , RT en Español",
-    "title": "Elon Musk: \"Los medios tradicionales están muriendo\"",
-    "description": "El empresario y propietario de la red social X vuelve a arremeter contra los medios tradicionales que fracasan en Internet.",
-    "url": "https://actualidad.rt.com/actualidad/504674-elon-musk-medios-tradicionales-muertos",
-    "urlToImage": "https://mf.b37mrtl.ru/actualidad/public_images/2024.04/article/660d715de9ff7136d147dddb.jpg",
-    "publishedAt": "2024-04-03T17:14:52Z",
-    "content": "Elon Musk volvió a poner en tela de juicio el valor de los medios de comunicación tradicionales comentando una publicación en X que, con el texto \"Bloomberg está muriendo\", adjunta un gráfico sobre e… [+902 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "marketwatch.com",
-    "title": "Elon Musk says Nelson Peltz ‘definitely’ should be on Disney board",
-    "description": "Tesla CEO Elon Musk also says he’d buy Disney shares if Nelson Peltz is elected to board. #tesla #elonmusk #disney #nelsonpeltz",
-    "url": "https://biztoc.com/x/542b2fde2182af30",
-    "urlToImage": "https://c.biztoc.com/273/og.png",
-    "publishedAt": "2024-04-03T17:14:04Z",
-    "content": "Tesla CEO Elon Musk also says hed buy Disney shares if Nelson Peltz is elected to board.\r\n#tesla#elonmusk#disney#nelsonpeltz\r\nThis story appeared on marketwatch.com, 2024-04-03."
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "La Tribune.fr"
-    },
-    "author": "Marie Nidiau",
-    "title": "Automobile : Renault et Volvo Trucks jouent la carte de l'innovation sur les véhicules utilitaires pour rester compétitifs",
-    "description": "Renault, Volvo Trucks et CMA CGM (propriétaire de La Tribune) s'allient pour former une co-entreprise spécialisée dans la production de véhicules utilitaires électriques. Les industriels misent sur l'innovation et la connectivité pour s'imposer dans ce marché…",
-    "url": "https://www.latribune.fr/entreprises-finance/industrie/automobile/automobile-renault-et-volvo-trucks-jouent-la-carte-de-l-innovation-sur-les-vehicules-utilitaires-pour-rester-competitifs-994507.html",
-    "urlToImage": "https://static.latribune.fr/full_width/2349013/flexis.jpg",
-    "publishedAt": "2024-04-03T17:14:00Z",
-    "content": "À quelques mètres de la Seine musicale à Boulogne, c'est l'effervescence. Luca de Meo, directeur général de Renault et Martin Lundstedt, celui de Volvo Trucks, inauguraient officiellement leur co-ent… [+4703 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Forbes"
-    },
-    "author": "Neil Winton, Senior Contributor, \n Neil Winton, Senior Contributor\n https://www.forbes.com/sites/neilwinton/",
-    "title": "Europe’s EV Pause Opens Temporary Opportunity For Plug-In Hybrids",
-    "description": "Mazda seems to have picked the perfect time to launch its plug-in hybrid MX-30 R-EV, but EU CO2 rules will limit the opportunity non EVs.",
-    "url": "https://www.forbes.com/sites/neilwinton/2024/04/03/europes-ev-pause-opens-temporary-opportunity-for-plug-in-hybrids/",
-    "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/660d78848cc8eeee712bf7bf/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-    "publishedAt": "2024-04-03T17:09:21Z",
-    "content": "Mazda MX-30 R-EV\r\nMazda\r\nMazda seems to have picked the perfect time to launch its plug-in hybrid MX-30, just as faltering sales from Tesla underline the point that electric cars arent ready for prim… [+7504 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "CleanTechnica"
-    },
-    "author": "Dr. Maximilian Holland",
-    "title": "EVs At 58.1% Share In Sweden — The Volvo EX30 Has A Meteoric Climb To #2 Spot",
-    "description": "March’s auto market saw plugin EVs at a 58.1% share in Sweden, down YoY from 59.9%. Plugin volumes were down YoY for BEVs, but up slightly for PHEVs. Overall auto volume was 23,891 units, down some 21% YoY. The Tesla Model Y was March’s bestselling BEV.   Mar…",
-    "url": "https://cleantechnica.com/2024/04/03/evs-at-58-1-share-in-sweden-the-volvo-ex30-has-a-meteoric-climb-to-2-spot/",
-    "urlToImage": "https://cleantechnica.com/wp-content/uploads/2024/04/March-2024-Sweden-Passenger-Auto-Registrations-WD.png",
-    "publishedAt": "2024-04-03T17:04:05Z",
-    "content": "Sign up for daily news updates from CleanTechnica on email. Or follow us on Google News!\r\nMarchs auto market saw plugin EVs at a 58.1% share in Sweden, down YoY from 59.9%. Plugin volumes were down Y… [+10269 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Feber.se"
-    },
-    "author": "Bobby Green",
-    "title": "Det här är Porsches eldrivna SUV med tre sätesrader",
-    "description": "Första gången vi får se K1\n\n\n\n\n\n\n\n\n\n\nNågon gång 2027 planerar Porsche att lansera en stor eldriven SUV med tre sätesrader. Den går under kodnamnet K1 och det här är det första vi får se av prototypen. Den är såklart kraftigt maskerad men den har trots detta r…",
-    "url": "https://feber.se/bil/det-har-ar-porsches-eldrivna-suv-med-tre-satesrader/466280/",
-    "urlToImage": "https://i.ytimg.com/vi/B9Pxbvv0My8/hqdefault.jpg",
-    "publishedAt": "2024-04-03T17:00:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+34925 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Observer"
-    },
-    "author": "Nhari Djan, Nhari Djan",
-    "title": "Elon Musk Makes Two Key Hires to Oversee X’s Content Safety",
-    "description": "X has named a new head of safety nine months after the previous person who held the role resigned.",
-    "url": "https://observer.com/2024/04/elon-musk-hire-safety-head-x/",
-    "urlToImage": "https://observer.com/wp-content/uploads/sites/2/2024/04/GettyImages-2133928250-e1712160953517.jpg?quality=80&w=635&h=419",
-    "publishedAt": "2024-04-03T16:57:56Z",
-    "content": "Elon Musk hired two executives to lead content moderation at X. Photo by Arturo Holmes/Getty Images\r\nElon Musk’s X yesterday (April 2) announced two new hires in its safety team amidst growing pressu… [+2140 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "engadget.com",
-    "title": "The Morning After: California introduces right to disconnect bill",
-    "description": "Even with burnout, overwhelm, budget cuts, hiring freezes, waves of redundancies and everything else in 2024, there’s still little regulation in the US to stop employers tapping workers to respond to requests either at their desk or through their smartphones …",
-    "url": "https://biztoc.com/x/db59dfdb98f18118",
-    "urlToImage": "https://c.biztoc.com/p/db59dfdb98f18118/og.webp",
-    "publishedAt": "2024-04-03T16:56:12Z",
-    "content": "Even with burnout, overwhelm, budget cuts, hiring freezes, waves of redundancies and everything else in 2024, theres still little regulation in the US to stop employers tapping workers to respond to … [+283 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Quartz India"
-    },
-    "author": "William Gavin",
-    "title": "Tesla's 'nightmare' first quarter in 3 charts",
-    "description": "Elon Musk’s Tesla disappointed investors and Wall Street when it reported a major decrease in electric vehicle sales and a more minor dip in production. Read more...",
-    "url": "https://qz.com/tesla-stock-q1-sales-elon-musk-deliveries-production-1851384492",
-    "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/83d87e794098a6edbeb2afb241462789.jpg",
-    "publishedAt": "2024-04-03T16:53:00Z",
-    "content": "Elon Musks Tesla disappointed investors and Wall Street when it reported a major decrease in electric vehicle sales and a more minor dip in production. \r\nThe automaker said it delivered 386,810 elect… [+4672 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Forbes"
-    },
-    "author": "Derek Saul, Forbes Staff, \n Derek Saul, Forbes Staff\n https://www.forbes.com/sites/dereksaul/",
-    "title": "Jeff Bezos Joins World’s Richest Person Bernard Arnault In $200 Billion Club",
-    "description": "Bezos is about $85 billion richer than he was a year ago.",
-    "url": "https://www.forbes.com/sites/dereksaul/2024/04/03/jeff-bezos-joins-worlds-richest-person-bernard-arnault-in-200-billion-club/",
-    "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/660d88c47f824997dc89a6db/0x0.jpg?format=jpg&crop=3537,1988,x0,y80,safe&height=900&width=1600&fit=bounds",
-    "publishedAt": "2024-04-03T16:52:13Z",
-    "content": "Amazon founder and executive chairman Jeff Bezos became the only American with a net worth above $200 billion Wednesday, enjoying a boost from Amazon stocks flirtation with an all-time high.\r\nJeff Be… [+2129 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "BMWBLOG"
-    },
-    "author": "Steven Paul",
-    "title": "Low Miles BMW i3s 120Ah Is Still a Great Buy",
-    "description": "Car shopping can be stressful. Lucky for you, we found the perfect fit – a lightly used 2019 BMW i3s. If you’re looking for an EV that isn’t a bore to drive, you need look...\nFirst published by https://www.bmwblog.com",
-    "url": "https://www.bmwblog.com/2024/04/03/bmw-i3s-120ah-great-buy/",
-    "urlToImage": "https://cdn.bmwblog.com/wp-content/uploads/2018/03/BMW-i3s-Autocross-5155.jpg",
-    "publishedAt": "2024-04-03T16:47:37Z",
-    "content": "Car shopping can be stressful. Lucky for you, we found the perfect fit a lightly used 2019 BMW i3s. If youre looking for an EV that isnt a bore to drive, you need look no further. In case you forgot,… [+4200 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Securityaffairs.com"
-    },
-    "author": "Pierluigi Paganini",
-    "title": "The New Version of JsOutProx is Attacking Financial Institutions in APAC and MENA via Gitlab Abuse",
-    "description": "Resecurity researchers warn that a new Version of JsOutProx is targeting financial institutions in APAC and MENA via Gitlab abuse. Resecurity has detected a new version of JSOutProx, which is targeting financial services and organizations in the APAC and MENA…",
-    "url": "https://securityaffairs.com/161438/malware/new-jsoutprox-attacking-financial-institutions-apac-mena.html",
-    "urlToImage": "https://securityaffairs.com/wp-content/uploads/2024/04/signal-2024-04-03-170646.jpeg",
-    "publishedAt": "2024-04-03T16:47:27Z",
-    "content": "The New Version of JsOutProx is Attacking Financial Institutions in APAC and MENA via Gitlab Abuse\r\n | Google fixed two actively exploited Pixel vulnerabilities\r\n | Highly sensitive files mysteriousl… [+57646 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Quartz India"
-    },
-    "author": "Andy Mills",
-    "title": "Why Tesla stock might not be a buy",
-    "description": "After Tesla's big delivery miss this week, The Motley Fool's Shelby McFaddin tells Quartz what's going on with the electric car company's stock",
-    "url": "https://qz.com/why-tesla-stock-might-not-be-a-buy-1851384659",
-    "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/ff9a7bf348849ab9d86e37a89083a69c.jpg",
-    "publishedAt": "2024-04-03T16:47:18Z",
-    "content": "Our free, fast, and fun briefing on the global economy, delivered every weekday morning."
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "investorplace.com",
-    "title": "Lightspeed Layoffs 2024: What to Know About the Latest LSPD Job Cuts",
-    "description": "Lightspeed Commerce (NYSE:LSPD) layoffs are in the news Wednesday after the cloud-based software subscriptions and payments solutions company announced plans to reduce its headcount. The Lightspeed layoffs will result in roughly 280 employees losing their job…",
-    "url": "https://biztoc.com/x/8b49b22f636239c1",
-    "urlToImage": "https://c.biztoc.com/p/8b49b22f636239c1/s.webp",
-    "publishedAt": "2024-04-03T16:44:06Z",
-    "content": "Lightspeed Commerce (NYSE:LSPD) layoffs are in the news Wednesday after the cloud-based software subscriptions and payments solutions company announced plans to reduce its headcount.The Lightspeed la… [+280 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "investorplace.com",
-    "title": "SPOT Stock Alert: Spotify Is Raising Prices",
-    "description": "Spotify (NYSE:SPOT) stock is on the move Wednesday on reports that the music streaming company is going to increase prices this year. According to these reports, Spotify is looking to bump up prices for its streaming content by $1 to $2 in 2024. The company w…",
-    "url": "https://biztoc.com/x/652547b0a9a3b8f1",
-    "urlToImage": "https://c.biztoc.com/p/652547b0a9a3b8f1/s.webp",
-    "publishedAt": "2024-04-03T16:44:05Z",
-    "content": "Spotify (NYSE:SPOT) stock is on the move Wednesday on reports that the music streaming company is going to increase prices this year.According to these reports, Spotify is looking to bump up prices f… [+269 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Gazeta.ru"
-    },
-    "author": "Газета.Ru",
-    "title": "Стало известно, в какой стране может появиться завод Tesla",
-    "description": "Компания Tesla планирует в ближайшее время направить команду специалистов из США в Индию для оценки потенциальных площадок под строительство завода по производству электромобилей стоимостью от $2 млрд до $3 млрд. Об этом сообщает The Indian Express со ссылкой…",
-    "url": "https://www.gazeta.ru/business/news/2024/04/03/22701523.shtml",
-    "urlToImage": "https://img.gazeta.ru/files3/424/16720424/Snimok-ekrana-2023-05-17-v-23.32-pic_32ratio_900x600-900x600-91231.jpg",
-    "publishedAt": "2024-04-03T16:43:41Z",
-    "content": ": .Ru (Gazeta.Ru)\r\n: «.», 1067761730376, 7743625728\r\n : 125239, , , , 67\r\n:\r\n117105,\r\n. ,\r\n , .9, .1"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "investors.com",
-    "title": "Stocks Reverse Higher Ahead Of Powell Speech; Nvidia Up Despite Taiwan Quake As Tesla Falls",
-    "description": "Major indexes rose from a key support level as investors awaited Fed Chair Jerome Powell's speech later today. Nvidia (NVDA) pared early losses in the stock market today after an earthquake in Taiwan affected its foundry partner, Taiwan Semiconductor (TSM), w…",
-    "url": "https://biztoc.com/x/846e6ba94ffc5676",
-    "urlToImage": "https://c.biztoc.com/p/846e6ba94ffc5676/og.webp",
-    "publishedAt": "2024-04-03T16:42:09Z",
-    "content": "Major indexes rose from a key support level as investors awaited Fed Chair Jerome Powell's speech later today. Nvidia (NVDA) pared early losses in the stock market today after an earthquake in Taiwan… [+287 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Fark.com"
-    },
-    "author": null,
-    "title": "I don't know, alienating your customer base, constantly overhyping your products, and devoting the majority of one's time to vanity projects may not be the best way to run a company [Obvious]",
-    "description": "I don't know, alienating your customer base, constantly overhyping your products, and devoting the majority of one's time to vanity projects may not be the best way to run a company",
-    "url": "https://www.fark.com/comments/13208380/I-dont-know-alienating-your-customer-base-constantly-overhyping-your-products-devoting-majority-of-ones-time-to-vanity-projects-may-not-be-best-way-to-run-a-company",
-    "urlToImage": "https://usrimg-full.fark.net/a/aU/fark_aUUiUH2_YGdZm17VwYd9SOHP1nA.jpg?AWSAccessKeyId=JO3ELGV4BGLFW7Y3EZXN&Expires=1712548800&Signature=NvJE5gl7ShVcNfR8RDsvVjTsRVs%3D",
-    "publishedAt": "2024-04-03T16:40:10Z",
-    "content": "Further down in the article:Cathie Wood buys Tesla stock\r\nWell, if I wasn't persuaded to avoid the stock before...\r\nSeriously: when Tesla's market cap was more than those of Toyota, Daimler, Volkswag… [+139 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Tech Xplore"
-    },
-    "author": "Shannon Roberts",
-    "title": "Even hands-free, phones and their apps cause dangerously distracted driving",
-    "description": "Do you ever use your cell phone while driving? Don't feel too guilty about saying yes&mdash;nearly 60% of drivers admit to using their phone in hands-free mode while driving.",
-    "url": "https://techxplore.com/news/2024-04-free-apps-dangerously-distracted.html",
-    "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2021/phonedrive.jpg",
-    "publishedAt": "2024-04-03T16:40:02Z",
-    "content": "This article has been reviewed according to Science X's \r\n editorial process\r\n and policies.\r\n Editors have highlighted\r\n the following attributes while ensuring the content's credibility:\r\nfact-chec… [+5041 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Feber.se"
-    },
-    "author": "Roger Åberg",
-    "title": "Trailer för serien Bodkin",
-    "description": "Krimpoddare upptäcker saker\n\n\n\n\n\n\n\n\n\n\nKrimpoddar verkar fortfarande vara en grej och i Bodkin spelar krimpoddare huvudrollen. De drar till den irländska staden Bodkin för att forska i ett kallt fall så och inte oväntat kanske blir de inte vidare bra mottagna.…",
-    "url": "https://feber.se/film/trailer-for-serien-bodkin/466281/",
-    "urlToImage": "https://i.ytimg.com/vi/KoVnzw4nP10/hqdefault.jpg",
-    "publishedAt": "2024-04-03T16:40:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+34830 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "tipranks.com",
-    "title": "Tesla (NASDAQ:TSLA) Eyes $3B India Plant Amidst Global Headwinds",
-    "description": "Tesla (NASDAQ:TSLA) is eyeing a new market for its EVs – India. According to the Financial Times, the electric vehicle giant plans to dispatch a te... #tesla",
-    "url": "https://biztoc.com/x/2ac49b7ee9982b15",
-    "urlToImage": "https://c.biztoc.com/p/2ac49b7ee9982b15/s.webp",
-    "publishedAt": "2024-04-03T16:36:23Z",
-    "content": "Tesla (NASDAQ:TSLA) is eyeing a new market for its EVs India. According to the Financial Times, the electric vehicle giant plans to dispatch a te...\r\n#tesla\r\nThis story appeared on tipranks.com, ."
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Slashdot.org"
-    },
-    "author": "feedfeeder",
-    "title": "Stock market today: US stocks drift lower as faith in rate cuts fades - Yahoo Finance",
-    "description": "Stock market today: US stocks drift lower as faith in rate cuts fadesYahoo Finance Tesla sales plunge far more than expectedCNN An anxious stock market is awaiting the Fed's speechQuartz Surging bond yields don't change the narrative for stocksYahoo Finance U…",
-    "url": "https://slashdot.org/firehose.pl?op=view&amp;id=173442038",
-    "urlToImage": null,
-    "publishedAt": "2024-04-03T16:34:36Z",
-    "content": "Sign up for the Slashdot newsletter! OR check out the new Slashdot job board to browse remote jobs or jobs in your areaDo you develop on GitHub? You can keep using GitHub but automatically sync your … [+268 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Ferra.ru"
-    },
-    "author": "Максим Многословный",
-    "title": "Аналитики: Илон Маск вредит «крутости» Tesla",
-    "description": "Илон Маск, технологический магнат, стоящий за Tesla, SpaceX и X (бывший Twitter), — это парадокс, считают эксперты. Его инновации произвели революцию в промышленности, но его выходки в Интернете отталкивают некоторых потребителей.",
-    "url": "https://www.ferra.ru/news/techlife/analitiki-ilon-mask-vredit-krutosti-tesla-03-04-2024.htm",
-    "urlToImage": "https://www.ferra.ru/imgs/2024/04/03/11/6419983/276cebff26f7be398c575f4db6d69671eb8a5f78.png",
-    "publishedAt": "2024-04-03T16:30:09Z",
-    "content": "Caliber, ,         « » Tesla.        70%   2021  31%   2024 .    .\r\n , Caliber, , 83% Tesla  , .   Tesla,  « », ,   .\r\n Brand Finance ,   Tesla   . Civic Science, , ,    34%   2022  42%   2024 .\r\n : … [+19 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "L'Express"
-    },
-    "author": "Laetitia Strauch-Bonart",
-    "title": "Asma Mhalla : \"Les Gafam ne sont plus des entreprises privées mais des acteurs politiques\"",
-    "description": "La chercheuse à l’EHESS publie un essai audacieux sur le pouvoir des géants technologiques, montrant qu’ils ne sont plus des entreprises privées mais de véritables acteurs politiques.",
-    "url": "https://www.lexpress.fr/idees-et-debats/asma-mhalla-les-gafam-ne-sont-plus-des-entreprises-privees-mais-des-acteurs-politiques-6C2RJVWYRVG7HEOQLVR6VCVK7I/",
-    "urlToImage": "https://www.lexpress.fr/resizer/qNQ9phXBYw0sz_Mznj5ppVieERI=/1200x630/cloudfront-eu-central-1.images.arcpublishing.com/lexpress/IHHEF2OWSBDFHBGFHYUHKQZLLA.jpg",
-    "publishedAt": "2024-04-03T16:30:00Z",
-    "content": "Cest un succès dédition inattendu : un premier ouvrage paru en février dernier, Technopolitique, vendu depuis à près de 10 000 exemplaires (Edistat). Mais cest aussi un succès tout court. Asma Mhalla… [+17820 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Shiftdelete.net"
-    },
-    "author": "Alperen Esin",
-    "title": "Dizel motorlar geri mi dönüyor?",
-    "description": "Toyota yönetimi, dizel motorların önümüzdeki yıllarda da kullanılmaya devam edeceğini öne sürdü. İşte detaylar...",
-    "url": "https://shiftdelete.net/toyota-dizel-motor-hakkinda-umutlu",
-    "urlToImage": "https://ares.shiftdelete.net/2023/11/Yeni-Toyota-C-HR-Hybrid-4.jpg",
-    "publishedAt": "2024-04-03T16:30:00Z",
-    "content": "Son dönemin en çok konuulan markalarndan Toyota, bu kez de dizel motorlar hakknda yapt açklama ile gündem oldu. Bu motorlarn önümüzdeki yllarda da kullanlmaya devam edeceini öne süren irket yönetimi,… [+1552 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Tech Xplore"
-    },
-    "author": "James Morton Turner",
-    "title": "America's green manufacturing boom, from EV batteries to solar panel production, isn't powered by renewable energy",
-    "description": "Panasonic's new US$4 billion battery factory in De Soto, Kansas, is designed to be a model of sustainability&mdash;it's an all-electric factory with no need for a smokestack. When finished, it will cover the size of 48 football fields, employ 4,000 people and…",
-    "url": "https://techxplore.com/news/2024-04-america-green-boom-ev-batteries.html",
-    "urlToImage": "https://scx2.b-cdn.net/gfx/news/2024/americas-green-manufac.jpg",
-    "publishedAt": "2024-04-03T16:28:53Z",
-    "content": "This article has been reviewed according to Science X's \r\n editorial process\r\n and policies.\r\n Editors have highlighted\r\n the following attributes while ensuring the content's credibility:\r\nfact-chec… [+5867 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "benzinga.com",
-    "title": "Mark Cuban Predicts World's First 'Trillionaire' Won't Be Musk Or Bezos",
-    "description": "A few years back, amid the fanfare surrounding tech titans like Elon Musk and Jeff Bezos, Mark Cuban made a forward-looking statement at SXSW Conference and Festivals in 2017. He declared that the world's first trillionaire would emerge not from the tradition…",
-    "url": "https://biztoc.com/x/94baceaa2119f3b6",
-    "urlToImage": "https://c.biztoc.com/p/94baceaa2119f3b6/s.webp",
-    "publishedAt": "2024-04-03T16:28:06Z",
-    "content": "A few years back, amid the fanfare surrounding tech titans like Elon Musk and Jeff Bezos, Mark Cuban made a forward-looking statement at SXSW Conference and Festivals in 2017.He declared that the wor… [+285 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "heise online"
-    },
-    "author": "Falk Steiner",
-    "title": "Autohersteller müssen TV-Sender auf Infotainmentsystemen anbieten",
-    "description": "Der Medienstaatsvertrag fährt ab jetzt auch bei einigen Autos mit. Das betrifft insbesondere Tesla, aber auch Audi und BMW.",
-    "url": "https://www.heise.de/news/Autohersteller-muessen-TV-Sender-auf-Infotainmentsystemen-anbieten-9674413.html",
-    "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/6/6/9/8/7/compositor-f3e9fc98e4f82e37-48876b75a5c1d565.webp",
-    "publishedAt": "2024-04-03T16:24:00Z",
-    "content": "Die Kommission für Zulassung und Aufsicht (ZAK) der Landesmedienanstalten hat erstmals die Benutzeroberflächen von In-Car-Entertainment-Systemen medienrechtlich bewertet. Das betrifft gleich mehrere … [+2902 chars]"
-    },
-    {
-    "source": {
-    "id": "the-verge",
-    "name": "The Verge"
-    },
-    "author": "Andrew J. Hawkins",
-    "title": "Ford’s hybrids just posted their best sales quarter ever — but so did gas-guzzlers",
-    "description": "Ford’s hybrid vehicles had their best sales quarter ever, but so did the company’s gas-guzzling SUVs. EV sales were up 86 percent compared to last year.",
-    "url": "https://www.theverge.com/2024/4/3/24119985/ford-q1-2024-sales-hybrid-gas-electric-mustang-f150",
-    "urlToImage": "https://cdn.vox-cdn.com/thumbor/xsHgDtZmJcKOHMUzYDgxT8V-N-E=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/19881636/acastro_200406_1777_ford_0001.0.jpg",
-    "publishedAt": "2024-04-03T16:21:20Z",
-    "content": "Fords hybrids just posted their best sales quarter ever but so did gas-guzzlers\r\nFords hybrids just posted their best sales quarter ever but so did gas-guzzlers\r\n / Fords EVs also did pretty well, al… [+3332 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Frandroid"
-    },
-    "author": "Maël Pilven",
-    "title": "Petit tour à bord de l’alléchant Ford Explorer : moins cher qu’un Tesla Model Y avec plus d’autonomie",
-    "description": "À l'occasion de son lancement commercial, nous avons pu faire un tour à bord du nouveau Ford Explorer. Voici nos premières impressions à bord de cette voiture électrique rivale du Tesla Model Y et du Renault Scénic E-Tech.",
-    "url": "https://www.frandroid.com/marques/ford/1981842_petit-tour-a-bord-de-lallechant-ford-explorer-moins-cher-quun-tesla-model-y-avec-plus-dautonomie",
-    "urlToImage": "https://images.frandroid.com/wp-content/uploads/2024/03/explorer-experience-requests-037-2.jpg",
-    "publishedAt": "2024-04-03T16:20:31Z",
-    "content": "À l'occasion de son lancement commercial, nous avons pu faire un tour à bord du nouveau Ford Explorer. Voici nos premières impressions à bord de cette voiture électrique rivale du Tesla Model Y et du… [+11578 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "asiafinancial.com",
-    "title": "Tesla Searching For $2-3 Billion India EV Factory Site: FT",
-    "description": "US EV giant Tesla is planning to scout for sites in India later this month for a $2 billion-plus electric car plant in the country. Tesla will reportedly send a team from the United States, the Financial Times reported on Wednesday, citing people familiar wit…",
-    "url": "https://biztoc.com/x/49cf2d9a0975503b",
-    "urlToImage": "https://c.biztoc.com/p/49cf2d9a0975503b/s.webp",
-    "publishedAt": "2024-04-03T16:20:05Z",
-    "content": "US EV giant Tesla is planning to scout for sites in India later this month for a $2 billion-plus electric car plant in the country.Tesla will reportedly send a team from the United States, the Financ… [+294 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "theguardian.com",
-    "title": "How much is Elon Musk to blame for Tesla sales slip?",
-    "description": "For one Tesla investor, the cause of Tuesday’s underwhelming sales figures was clear: the chief executive, Elon Musk. “Basically Tesla can’t sell its cars due to Elon’s behaviour,” wrote Ross Gerber, the chief executive of the investment management firm Gerbe…",
-    "url": "https://biztoc.com/x/74377979882514ea",
-    "urlToImage": "https://c.biztoc.com/p/74377979882514ea/s.webp",
-    "publishedAt": "2024-04-03T16:20:04Z",
-    "content": "For one Tesla investor, the cause of Tuesdays underwhelming sales figures was clear: the chief executive, Elon Musk.Basically Tesla cant sell its cars due to Elons behaviour, wrote Ross Gerber, the c… [+279 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Feber.se"
-    },
-    "author": "Roger Åberg",
-    "title": "Kan man köra standup skriven av 7-åringar?",
-    "description": "Ja, men det är plågsamt\n\n\n\n\n\n\n\n\n\n\nMax Fosh har gjort en succé-turné och efter det kommer lite ångest inför nästa gång man ska upp på scenen med nytt material. Kommer folk att älska det eller blir man sågad? \n\nFör att lösa detta fick Max kompis honom att sänka…",
-    "url": "https://feber.se/video/kan-man-kora-standup-skriven-av-7-aringar/466279/",
-    "urlToImage": "https://i.ytimg.com/vi/n51GQbo7I_A/hqdefault.jpg",
-    "publishedAt": "2024-04-03T16:20:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+34716 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "jalopnik.com",
-    "title": "Toyota’s Hybrid Sales Are Far Outpacing Its EV Growth",
-    "description": "Good morning! It’s Wednesday, April 3, 2024, and this is The Morning Shift, your daily roundup of the top automotive headlines from around the world, in one place. Here are the important stories you need to know. After all the talk of dwindling sales at EV ma…",
-    "url": "https://biztoc.com/x/8ea93c2ea0a016a4",
-    "urlToImage": "https://c.biztoc.com/p/8ea93c2ea0a016a4/og.webp",
-    "publishedAt": "2024-04-03T16:14:10Z",
-    "content": "Good morning! Its Wednesday, April 3, 2024, and this is The Morning Shift, your daily roundup of the top automotive headlines from around the world, in one place. Here are the important stories you n… [+289 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Airbag.uy"
-    },
-    "author": "Montevideo Portal",
-    "title": "La china Xiaomi se dispara un 16 % en bolsa tras lanzamiento de su primer auto eléctrico",
-    "description": "El SU7 recibió casi 90.000 pedidos en solo 24 horas y busca competir con el Model 3 de Tesla.",
-    "url": "https://www.airbag.uy/Airbag/La-china-Xiaomi-se-dispara-un-16--en-bolsa-tras-lanzamiento-de-su-primer-auto-electrico-uc884398",
-    "urlToImage": "https://imagenes.montevideo.com.uy/imgnoticias/202404/_W933_80/876761.jpg",
-    "publishedAt": "2024-04-03T16:14:00Z",
-    "content": "Las acciones de la tecnológica china Xiaomi se dispararon esta semana hasta un 16 % en su regreso a la bolsa tras los feriados de Pascuas a nivel mundial, impulsadas por el lanzamiento de su primer v… [+1808 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "aol.com",
-    "title": "Tesla could 'go bust' and plunge 91% because it's in a bubble and not growing, longtime bear says",
-    "description": "None Tesla could end up plunging as low as $14 a share, according to longtime bear Per Lekander, a longtime bear who's been shorting the stock since 2020. • None Lekander, who's been shorting Tesla's stock since 2020, calls it the biggest bubble \"in modern hi…",
-    "url": "https://biztoc.com/x/b10b6aad19787e6c",
-    "urlToImage": "https://c.biztoc.com/p/b10b6aad19787e6c/s.webp",
-    "publishedAt": "2024-04-03T16:10:16Z",
-    "content": "None Tesla could end up plunging as low as $14 a share, according to longtime bear Per Lekander, a longtime bear who's been shorting the stock since 2020.None Lekander, who's been shorting Tesla's st… [+274 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "theguardian.com",
-    "title": "How much is Elon Musk to blame for Tesla sales slip?",
-    "description": "For one Tesla investor, the cause of Tuesday’s underwhelming sales figures was clear: the chief executive, Elon Musk. “Basically Tesla can’t sell its cars due to Elon’s behaviour,” wrote Ross Gerber, the chief executive of the investment management firm Gerbe…",
-    "url": "https://biztoc.com/x/58a35c0e1ae3330f",
-    "urlToImage": "https://c.biztoc.com/p/58a35c0e1ae3330f/s.webp",
-    "publishedAt": "2024-04-03T16:06:19Z",
-    "content": "For one Tesla investor, the cause of Tuesdays underwhelming sales figures was clear: the chief executive, Elon Musk.Basically Tesla cant sell its cars due to Elons behaviour, wrote Ross Gerber, the c… [+279 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Futurism"
-    },
-    "author": "Victor Tangermann",
-    "title": "Investor Predicts Tesla Could \"Go Bust\"",
-    "description": "Falling Short Tesla is in for a year of hurt. Earlier this week, Tesla posted its first-quarter earnings, shocking investors with worse-than-expected results with a 20 percent quarter-over-quarter drop in deliveries. And analysts bearish on Tesla are expectin…",
-    "url": "https://futurism.com/the-byte/investor-predicts-tesla-go-bust",
-    "urlToImage": "https://wp-assets.futurism.com/2024/04/investor-predicts-tesla-go-bust.jpg",
-    "publishedAt": "2024-04-03T16:06:16Z",
-    "content": "\"This was really the beginning of the end of the Tesla bubble.\"\r\nFalling Short\r\nTesla is in for a year of hurt.\r\nEarlier this week, the electric car manufacturer posted its first-quarter earnings, al… [+2156 chars]"
-    },
-    {
-    "source": {
-    "id": "lenta",
-    "name": "Lenta"
-    },
-    "author": "Лина Пивоварова",
-    "title": "В США засомневались в когнитивных способностях Байдена",
-    "description": "Американский миллиардер, глава Tesla и SpaceX Илон Маск заявил, что президент США Джо Байден не понимает, что происходит в США на самом деле и не несет ответственности за свои действия. «Байден на самом деле не понимает, что происходит. За это несет ответстве…",
-    "url": "https://lenta.ru/news/2024/04/03/v-ssha-zasomnevalis-v-kognitivnyh-sposobnostyah-baydena/",
-    "urlToImage": "https://icdn.lenta.ru/images/2024/04/03/18/20240403185738171/share_943f706506b7468d2ee82832eff459a4.jpg",
-    "publishedAt": "2024-04-03T16:01:00Z",
-    "content": ", TeslaSpaceX , , . ( Twitter).\r\nCNN , . - , , « , ».\r\n« , . », .\r\n « » ."
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Feber.se"
-    },
-    "author": "Bobby Green",
-    "title": "Efterträdaren till Huracán verkar få namnet Temerario",
-    "description": "Betyder \"hänsynslös\"\n\n\n\n\n\n\nEfterträdaren till Lamborghini Huracán är runt hörnet och nu har vi namnet på den, sägs det. Det är Temerario som på italienska betyder \"hänsynslös\". Det verkar alltså vara en riktigt ursinnig tjur vi har att vänta oss, och av logga…",
-    "url": "https://feber.se/bil/eftertradaren-till-huracan-verkar-fa-namnet-temerario/466282/",
-    "urlToImage": "https://static.feber.se/article_images/58/55/49/585549.jpg",
-    "publishedAt": "2024-04-03T16:00:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+34697 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Marketscreener.com"
-    },
-    "author": null,
-    "title": "Tesla: Canaccord Genuity remains Buy, targets $234",
-    "description": "(marketscreener.com) On Wednesday, Canaccord Genuity renewed its Buy recommendation on Tesla, with a price target of $234, following the worse-than-expected sales figures published the previous day by the American carmaker.The Canadian broker points out that …",
-    "url": "https://www.marketscreener.com/quote/stock/TESLA-INC-6344549/news/Tesla-Canaccord-Genuity-remains-Buy-targets-234-46351255/",
-    "urlToImage": "https://www.marketscreener.com/images/reuters/2024-03-05T144855Z_1_LYNXNPEK240IP_RTROPTP_3_GERMANY-TESLA-FIRE.JPG",
-    "publishedAt": "2024-04-03T15:54:55Z",
-    "content": "On Wednesday, Canaccord Genuity renewed its Buy recommendation on Tesla, with a price target of $234, following the worse-than-expected sales figures published the previous day by the American carmak… [+1130 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "El Financiero"
-    },
-    "author": "Columnista Invitado",
-    "title": "Jaime Toussaint von Bertrab: Nearshoring",
-    "description": "Una oportunidad única para elevar el empleo en Nuevo León.",
-    "url": "https://www.elfinanciero.com.mx/monterrey/2024/04/03/jaime-toussaint-von-bertrab-nearshoring/",
-    "urlToImage": "https://www.elfinanciero.com.mx/resizer/lLvaZcZEsiBFuX8qCGJTaZsg0Iw=/1200x630/filters:format(jpg):quality(70):focal(1099x985:1109x995)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/EGM6MVAMSVA2NFGKRP7YVB32VU.jpg",
-    "publishedAt": "2024-04-03T15:54:27Z",
-    "content": "El fenómeno económico del nearshoring es una oportunidad única para impulsar la creación y calidad de empleos calificados en México, siendo Nuevo León el estado mejor posicionado. El presidente de la… [+4331 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Tass.ru"
-    },
-    "author": "ТАСС",
-    "title": "СМИ: Tesla приступила к поиску площадок для строительства завода в Индии",
-    "description": "Как пишет газета The Indian Express, предположительно местом для постройки могут стать штаты Махараштра, Гуджарат или Тамилнад",
-    "url": "https://tass.ru/ekonomika/20438277",
-    "urlToImage": "https://cdn-storage-media.tass.ru/thumb/ru/ekonomika/20438277?u=2024-04-03T15:52:44.255175",
-    "publishedAt": "2024-04-03T15:52:44Z",
-    "content": "-, 3 . //. Tesla . The Indian Express .\r\n , , , . Tesla , . , , $2-3 .\r\n 2023 Tesla , . 500 . , . $25 . , .\r\n Tesla , - , . Tesla The Wall Street Journal , \" \", , 2023 . - , , \"Tesla , , \"."
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "01net.com"
-    },
-    "author": "Mickaël Bazoge",
-    "title": "Tesla connaît ses premières difficultés depuis 4 ans, est-ce vraiment inquiétant ?",
-    "description": "Les livraisons de Model ont accusé une baisse sensible au premier trimestre, et les perspectives ne sont guère engageantes. Le constructeur s'apprête à vivre quelques mois difficiles.",
-    "url": "https://www.01net.com/actualites/tesla-connait-ses-premieres-difficultes-depuis-4-ans-est-ce-vraiment-inquietant.html",
-    "urlToImage": "https://www.01net.com/app/uploads/2023/11/Test-Tesla-Model-3-20247.jpg",
-    "publishedAt": "2024-04-03T15:52:41Z",
-    "content": "Les livraisons de Model ont accusé une baisse sensible au premier trimestre, et les perspectives ne sont guère engageantes. Le constructeur s’apprête à vivre quelques mois difficiles.Tesla a livré 38… [+3097 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Olhardigital.com.br"
-    },
-    "author": "Gabriel Sérvio",
-    "title": "Tesla supera BYD e lidera vendas de carros elétricos",
-    "description": "Tesla vendeu 386 mil veículos elétricos no primeiro trimestre de 2024\nO post Tesla supera BYD e lidera vendas de carros elétricos apareceu primeiro em Olhar Digital.",
-    "url": "https://olhardigital.com.br/2024/04/03/carros-e-tecnologia/tesla-supera-byd-e-lidera-vendas-de-carros-eletricos/",
-    "urlToImage": "https://olhardigital.com.br/wp-content/uploads/2023/04/Tesla2-695x500.jpg",
-    "publishedAt": "2024-04-03T15:48:42Z",
-    "content": "A BYD foi a montadora que mais vendeu carros elétricos no último trimestre de 2023, superando a Tesla. No início de 2024 o cenário mudou. A empresa de Elon Musk conseguiu tomar a liderança novamente,… [+1500 chars]"
-    },
-    {
-    "source": {
-    "id": "financial-post",
-    "name": "Financial Post"
-    },
-    "author": "Bloomberg News",
-    "title": "WSP Global caught in short seller's crosshairs, shares tumble",
-    "description": "WSP Global Inc. shares plunged after Spruce Point Capital Management LLC said it was shorting the firm’s stock. Find out more.",
-    "url": "https://financialpost.com/investing/wsp-global-short-seller-crosshairs-shares-tumble",
-    "urlToImage": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2024/04/no0402tsx.jpg",
-    "publishedAt": "2024-04-03T15:47:25Z",
-    "content": "WSP Global Inc. shares plunged after Spruce Point Capital Management LLC said it was shorting the Canadian engineering firms stock, slapping it with a strong sell recommendation.\r\nSpruce Point, a pro… [+1791 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "[Removed]"
-    },
-    "author": null,
-    "title": "[Removed]",
-    "description": "[Removed]",
-    "url": "https://removed.com",
-    "urlToImage": null,
-    "publishedAt": "1970-01-01T00:00:00Z",
-    "content": "[Removed]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "foxnews.com",
-    "title": "Truckers challenge Biden administration over climate crackdown on electric big rigs",
-    "description": "American truck drivers are sounding the horn on the Biden administration's recently finalized environmental regulations that aim to push for the heavy-duty vehicle sector to go all-electric. The truckers voiced concerns that electric heavy-duty vehicle techno…",
-    "url": "https://biztoc.com/x/43c6b37d751cdcda",
-    "urlToImage": "https://c.biztoc.com/p/43c6b37d751cdcda/og.webp",
-    "publishedAt": "2024-04-03T15:46:10Z",
-    "content": "American truck drivers are sounding the horn on the Biden administration's recently finalized environmental regulations that aim to push for the heavy-duty vehicle sector to go all-electric.The truck… [+285 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "GlobeNewswire"
-    },
-    "author": "Research and Markets",
-    "title": "Global Green Technology Sustainability Market Projected to Surge with 20.8% CAGR through 2028",
-    "description": "Dublin, April 03, 2024 (GLOBE NEWSWIRE) -- The \"Green Technology Sustainability Market - Global Industry Size, Share, Trends, Opportunity, and Forecast, 2018-2028F\" report has been added to ResearchAndMarkets.com's offering.",
-    "url": "https://www.globenewswire.com/news-release/2024/04/03/2857202/28124/en/Global-Green-Technology-Sustainability-Market-Projected-to-Surge-with-20-8-CAGR-through-2028.html",
-    "urlToImage": "https://ml.globenewswire.com/Resource/Download/908fb457-7f8e-4a08-9081-5565e3dfb3d7",
-    "publishedAt": "2024-04-03T15:46:00Z",
-    "content": "Dublin, April 03, 2024 (GLOBE NEWSWIRE) -- The \"Green Technology Sustainability Market - Global Industry Size, Share, Trends, Opportunity, and Forecast, 2018-2028F\" report has been added to ResearchA… [+4797 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Yahoo Entertainment"
-    },
-    "author": null,
-    "title": "Musk plots $3bn Tesla factory in India as Modi races to overtake China on electric cars",
-    "description": null,
-    "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a840d6f5-e6d4-4fdb-9e67-ee9317d5de62",
-    "urlToImage": null,
-    "publishedAt": "2024-04-03T15:45:29Z",
-    "content": "If you click 'Accept all', we and our partners (including 240 who are part of the IAB Transparency &amp; Consent Framework) will also use cookies and your personal data, such as IP address, precise l… [+686 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Yahoo Entertainment"
-    },
-    "author": "David Nadelle",
-    "title": "Tesla Sales Continue to Plummet — Is Demand for Electric Vehicles Going Down?",
-    "description": "Tesla shares dropped another 5% on Monday, April 1, after the EV company's first annual drop in sales was reported. Shares have suffered a loss of more than ...",
-    "url": "https://finance.yahoo.com/news/tesla-sales-continue-plummet-demand-154449099.html",
-    "urlToImage": "https://s.yimg.com/ny/api/res/1.2/3oA3MR942h7h4aHBZ4nNeA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/gobankingrates_644/06e25d4408e3e3c36bc707b327c75487",
-    "publishedAt": "2024-04-03T15:44:49Z",
-    "content": "Tesla shares dropped another 5% on Monday, April 1, after the EV companys first annual drop in sales was reported. Shares have suffered a loss of more than a third of their value this year. This has … [+4056 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Digital Trends"
-    },
-    "author": "Allan Vélez",
-    "title": "Las teorías de la conspiración más disparatadas de Mr. Tartaria",
-    "description": "¿La Esfinge de Giza es una antena planetaria? Eso dice Mr. Tartaria en una de sus disparatadas teorías de la conspiración.\nThe post Las teorías de la conspiración más disparatadas de Mr. Tartaria appeared first on Digital Trends Español.",
-    "url": "https://es.digitaltrends.com/sociales/mr-tartaria-teorias-de-la-conspiracion-mas-disparatadas/",
-    "urlToImage": "https://es.digitaltrends.com/wp-content/uploads/2024/04/Karles-Torah.jpeg?resize=1200%2C630&p=1",
-    "publishedAt": "2024-04-03T15:44:44Z",
-    "content": "Basta con que busques algún contenido de extraterrestres o sobre las pirámides de Giza para que tarde o temprano te acabes encontrando un TikTokde Mr. Tartaria, el conspiracionista español del moment… [+2904 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Electrek"
-    },
-    "author": "Fred Lambert",
-    "title": "Tesla brings 0% interest loans to China as it loses market shares",
-    "description": "Tesla is launching 0% interest loans for a limited time in China as a new incentive amid the automaker losing market shares in the critical market.\n\n\n\n more…",
-    "url": "http://electrek.co/2024/04/03/tesla-0-interest-loans-china-loses-market-shares/",
-    "urlToImage": "https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2022/06/Tesla-Supercharger-hero.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
-    "publishedAt": "2024-04-03T15:44:11Z",
-    "content": "Tesla is launching 0% interest loans for a limited time in China as a new incentive amid the automaker losing market shares in the critical market.\r\nJust as end-of-quarter incentives ended, Tesla is … [+1429 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Feber.se"
-    },
-    "author": "Wille Wilhelmsson",
-    "title": "Försvarets nya spionfartyg har döpts",
-    "description": "Säg hej till HMS Artemis\n\n\n\n\n\n\nIdag döpte flottan sitt senaste signalspaningsfartyg HMS Artemis under en ceremoni vid Örlogshamnen, Karlskrona. Fartyget kommer att ersätta det nuvarande signalspaningsfartyget Orion och kommer att operera i Östersjön, primärt …",
-    "url": "https://feber.se/samhalle/forsvarets-nya-spionfartyg-har-dopts/466290/",
-    "urlToImage": "https://static.feber.se/article_images/58/56/00/585600.jpg",
-    "publishedAt": "2024-04-03T15:40:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+34987 chars]"
-    },
-    {
-    "source": {
-    "id": "la-nacion",
-    "name": "La Nacion"
-    },
-    "author": null,
-    "title": "Quiénes son las 14 personas con las fortunas más gigantescas del mundo",
-    "description": "La riqueza individual de cada uno de estos magnates es superior al PIB de países como Panamá, Uruguay, Costa Rica o Bolivia, según Forbes",
-    "url": "https://www.lanacion.com.ar/economia/negocios/quienes-son-las-14-personas-con-las-fortunas-mas-gigantescas-del-mundo-nid03042024/",
-    "urlToImage": "https://resizer.glanacion.com/resizer/v2/bernard-arnault-es-el-hombre-mas-rico-del-ADNNXPOLAZHJTDSI2WTIDUSPCY.jpg?auth=0da3b0c2c3a318a5e525159be666a234bd083ad34d65570cbe3a709587ed466c&width=768&quality=70&smart=false",
-    "publishedAt": "2024-04-03T15:37:40Z",
-    "content": "En la lista Forbes del año pasado solo eran seis los magnates que habían batido el récord de tener una fortuna superior a los US$100.000 millones. La novedad es que en la lista de este año, publicada… [+6466 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "youtube.com",
-    "title": "Elon Musk Has a Porn Problem",
-    "description": "On this episode of the Elon, Inc. podcast, New York magazine writer John Herrman joins our discussion about X’s growing spam presence and why the platform can’t seem to control it. If you think you’ve been seeing more X-rated content on X lately, you’re not a…",
-    "url": "https://biztoc.com/x/a496f1d4b461c09a",
-    "urlToImage": "https://c.biztoc.com/p/a496f1d4b461c09a/s.webp",
-    "publishedAt": "2024-04-03T15:36:11Z",
-    "content": "On this episode of the Elon, Inc. podcast, New York magazine writer John Herrman joins our discussion about Xs growing spam presence and why the platform cant seem to control it. If you think youve b… [+305 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "investing.com",
-    "title": "Midday movers: Intel, Ulta Beauty fall; Spotify rises By",
-    "description": "Investing.com -- Main U.S. indexes gained Wednesday after data on the services sector indicated some softening, improving the outlook for potential Fed rate cuts. Here are some of the biggest U.S. stock movers today:​ Intel (NASDAQ: ) stock slid over 7% after…",
-    "url": "https://biztoc.com/x/cdaf67b4c322cc40",
-    "urlToImage": "https://c.biztoc.com/p/cdaf67b4c322cc40/s.webp",
-    "publishedAt": "2024-04-03T15:36:08Z",
-    "content": "Investing.com -- Main U.S. indexes gained Wednesday after data on the services sector indicated some softening, improving the outlook for potential Fed rate cuts.Here are some of the biggest U.S. sto… [+292 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Protothema.gr"
-    },
-    "author": "Τίνα Μανδηλαρά",
-    "title": "Burn Book: A tech love story - Tα άπλυτα της Silicon Valley έγιναν βιβλίο",
-    "description": "Η πολυβραβευμένη Αμερικανίδα δημοσιογράφος Κάρα Σουίσερ γράφει, μεταξύ άλλων, για το πάρτι με το γυμνόστηθο άγαλμα που έβγαζε, αντί για γάλα, εξωτικά κοκτέιλ, τον αδέξιο Ζούκερμπεργκ με τα απανωτά σύνδρομα, τον θρασύ Μασκ και τον δαιμόνιο Τζεφ Μπέζος | Ίλον Μ…",
-    "url": "https://www.protothema.gr/culture/books/article/1482750/burn-book-a-tech-love-story-ta-apluta-tis-silicon-valley-eginan-vivlio/",
-    "urlToImage": "https://i1.prth.gr/images/640x360share/files/2024-04-01/burn-book-mak.jpg",
-    "publishedAt": "2024-04-03T15:36:00Z",
-    "content": ", , , , . , . 40 60, « media», «Wall Street Journal», . «-: hi-tech » (Burn Book: A tech love story), , , , , - . \r\n, , , . , Google . , , , Amazon . \r\n, , , , . \r\n , Silicon Valley , «Vanity Fair» ,… [+708 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "investorplace.com",
-    "title": "Can a New Plant in India Save Struggling Tesla (TSLA) Stock?",
-    "description": "Factories take years to build, which leaves TSLA stock plenty of time to fall further Following a miss on its first-quarter delivery figures, many analysts have declared that Tesla (NASDAQ: ) is poised to lose its status as a member of the “Magnificent Seven.…",
-    "url": "https://biztoc.com/x/f0f0b403df576cd8",
-    "urlToImage": "https://c.biztoc.com/p/f0f0b403df576cd8/s.webp",
-    "publishedAt": "2024-04-03T15:32:18Z",
-    "content": "Factories take years to build, which leaves TSLA stock plenty of time to fall furtherFollowing a miss on its first-quarter delivery figures, many analysts have declared that Tesla (NASDAQ: ) is poise… [+275 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "investorplace.com",
-    "title": "Amazon Layoffs 2024: What to Know About the Latest AWS Job Cuts",
-    "description": "Amazon layoffs are coming for hundreds of employees Amazon (NASDAQ:AMZN) layoffs are coming for hundreds of the e-commerce company’s employees as it makes major cuts at its AWS division. According to an internal email, hundreds of jobs are being eliminated at…",
-    "url": "https://biztoc.com/x/561466a7ed268e97",
-    "urlToImage": "https://c.biztoc.com/p/561466a7ed268e97/s.webp",
-    "publishedAt": "2024-04-03T15:32:18Z",
-    "content": "Amazon layoffs are coming for hundreds of employeesAmazon (NASDAQ:AMZN) layoffs are coming for hundreds of the e-commerce companys employees as it makes major cuts at its AWS division.According to an… [+309 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "investorplace.com",
-    "title": "DIS Stock: Get Ready for the Final Face-Off Between Bob Iger and Nelson Peltz",
-    "description": "The proxy battle over Disney's board will likely end in a victory for management. The proxy battle between Walt Disney (NYSE: ) CEO Bob Iger and Trian Partners’ Nelson Peltz is due to end today once the election for Disney directors is over. says Iger has the…",
-    "url": "https://biztoc.com/x/3b24701657a9e7cb",
-    "urlToImage": "https://c.biztoc.com/p/3b24701657a9e7cb/s.webp",
-    "publishedAt": "2024-04-03T15:32:09Z",
-    "content": "The proxy battle over Disney's board will likely end in a victory for management.The proxy battle between Walt Disney (NYSE: ) CEO Bob Iger and Trian Partners Nelson Peltz is due to end today once th… [+280 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "abc7.com",
-    "title": "More reports, video emerge of woman damaging parked cars in Los Angeles with brick",
-    "description": "More reports emerge of woman smashing windshields in Los Angeles with brick More people are coming forward with reports about a woman damaging the windows of parked cars in Los Angeles using a brick. More people are coming forward with reports about a woman d…",
-    "url": "https://biztoc.com/x/58e7d1c51024450b",
-    "urlToImage": "https://c.biztoc.com/p/58e7d1c51024450b/og.webp",
-    "publishedAt": "2024-04-03T15:32:08Z",
-    "content": "More reports emerge of woman smashing windshields in Los Angeles with brickMore people are coming forward with reports about a woman damaging the windows of parked cars in Los Angeles using a brick.M… [+291 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Caschys Blog"
-    },
-    "author": "André Westphal",
-    "title": "In-Car-Entertainment von Tesla und Co.: Verstärkte Regulierung für Gatekeeper",
-    "description": "Die Kommission für Zulassung und Aufsicht (ZAK) hat die In-Car-Entertainment-Systeme von Audi, BMW/ Mini und Tesla als Benutzeroberflächen eingestuft. Den „Tesla Media Player“ ordnet die ZAK außerdem als Medienplattform ein. Was bedeutet das? Nun, die Plattfo…",
-    "url": "https://stadt-bremerhaven.de/in-car-entertainment-von-tesla-und-co-verstaerkte-regulierung-fuer-gatekeeper/",
-    "urlToImage": "https://stadt-bremerhaven.de/wp-content/uploads/2023/08/Tesla-Model-3.jpeg",
-    "publishedAt": "2024-04-03T15:30:22Z",
-    "content": "Die Kommission für Zulassung und Aufsicht (ZAK) hat die In-Car-Entertainment-Systeme von Audi, BMW/ Mini und Tesla als Benutzeroberflächen eingestuft. Den Tesla Media Player ordnet die ZAK außerdem a… [+2480 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "aol.com",
-    "title": "Ex-Chrysler CEO predicts EV startups are 'just not going to make it'",
-    "description": "With electric vehicle (EV) names like Tesla and Rivian recently announcing financial woes, the former CEO and Chairman of Chrysler told a cautionary tale about the market’s future. \"They're having one heck of a time. These startups are just not going to make …",
-    "url": "https://biztoc.com/x/73edbe02aec7267b",
-    "urlToImage": "https://c.biztoc.com/p/73edbe02aec7267b/s.webp",
-    "publishedAt": "2024-04-03T15:28:04Z",
-    "content": "With electric vehicle (EV) names like Tesla and Rivian recently announcing financial woes, the former CEO and Chairman of Chrysler told a cautionary tale about the markets future.\"They're having one … [+292 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Vedomosti.ru"
-    },
-    "author": null,
-    "title": "Bloomberg: акции Tesla дешевеют и приближаются к $150 за бумагу",
-    "description": "",
-    "url": "https://www.vedomosti.ru/business/news/2024/04/03/1029708-aktsii-tesla-desheveyut",
-    "urlToImage": "https://sharing.vedomosti.ru/1712158022/vedomosti.ru/business/news/2024/04/03/1029708-aktsii-tesla-desheveyut.jpg",
-    "publishedAt": "2024-04-03T15:27:02Z",
-    "content": "vedomosti.ru\r\n, , , , - . \r\n ( , , «», ). \r\n - «2», vedomosti.ru\r\n © , / 7712108141/771501001, 1027739124775, 127018, . , . , 3 1, I, 2, 21. 19992024"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Electrek"
-    },
-    "author": "Peter Johnson",
-    "title": "Ford takes second in US EV market after sales climb 86% as lower prices take effect",
-    "description": "Ford is starting 2024 off strong with EV sales up 86% through the first three months. The growth was enough for Ford to place second in the US EV market behind only Tesla. Ford’s sales surge comes after slashing prices earlier this year.\n\n\n\n more…",
-    "url": "http://electrek.co/2024/04/03/ford-takes-second-us-ev-market-price-cuts-take-effect/",
-    "urlToImage": "https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2023/08/Ford-gas-models-EVs-1.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1",
-    "publishedAt": "2024-04-03T15:26:49Z",
-    "content": "Ford is starting 2024 off strong with EV sales up 86% through the first three months. The growth was enough for Ford to place second in the US EV market behind only Tesla. Ford’s sales surge comes af… [+4076 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "WebProNews"
-    },
-    "author": "Rich Ord",
-    "title": "Elon Musk’s Neuralink Unleashes Paradigm Shift: Nolan’s Astonishing Transformation Redefines Human Potential",
-    "description": "WebProNews\nElon Musk’s Neuralink Unleashes Paradigm Shift: Nolan’s Astonishing Transformation Redefines Human Potential\nPromising to bridge the gap between the human brain and artificial intelligence, Neuralink has emerged as a beacon of hope for individuals …",
-    "url": "https://www.webpronews.com/elon-musks-neuralink-unleashes-paradigm-shift-nolans-astonishing-transformation-redefines-human-potential/",
-    "urlToImage": "https://www.webpronews.com/wp-content/uploads/2024/04/Screenshot-2024-04-03-at-11.22.28 AM.jpg",
-    "publishedAt": "2024-04-03T15:24:50Z",
-    "content": "Few innovations in neurotechnology have sparked as much intrigue and fascination as Neuralink, the brainchild of entrepreneur Elon Musk. Promising to bridge the gap between the human brain and artifi… [+3828 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Knack.be"
-    },
-    "author": "Jeroen de Preter",
-    "title": "Waarom daalt plots de verkoop van elektrische wagens? ‘Rijbereik speelt nog nauwelijks een rol’",
-    "description": "Zowel Tesla als zijn Chinese concurrent BYD verkochten het afgelopen kwartaal aanzienlijk minder elektrische auto’s dan verwacht. Een tijdelijke dip, of is er meer aan de hand?\nThe post Waarom daalt plots de verkoop van elektrische wagens? ‘Rijbereik speelt n…",
-    "url": "https://www.knack.be/nieuws/auto/waarom-daalt-de-verkoop-plots-van-elektrische-wagens-rijbereik-speelt-nog-nauwelijks-een-rol/",
-    "urlToImage": "https://img.static-rmg.be/a/view/q75/w1600/h836/f27.93,56.85/5705019/gettyimages-1449024276-jpg.jpg",
-    "publishedAt": "2024-04-03T15:22:23Z",
-    "content": "Zowel Tesla als zijn Chinese concurrent BYD verkochten het afgelopen kwartaal aanzienlijk minder elektrische autos dan verwacht. Een tijdelijke dip, of is er meer aan de hand?\r\nBYD, de Chinese constr… [+3790 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Moneycontrol"
-    },
-    "author": "Moneycontrol Hindi",
-    "title": "India में प्लांट लगा सकती है Tesla, जगह तलाशने के लिए भेजेगी टीम: रिपोर्ट",
-    "description": "Tesla: देश में कई विदेशी कंपनियां अभी भी अपने कारोबार की शुरुआत करने की राह देख रही हैं। इस बीच यूके के फाइनेंशियल टाइम्स ने बताया कि अरबपति एलॉन मस्क की टेस्ला प्रस्तावित 2 बिलियन से 3 बिलियन डॉलर के इलेक्ट्रिक कार प्लांट के लिए जगह तलाशने के लिए इस महीने भा…",
-    "url": "https://hindi.moneycontrol.com/news/tech/auto/tesla-can-set-up-a-plant-in-india-will-send-a-team-to-find-a-place-1887361.html",
-    "urlToImage": "https://images.moneycontrol.com/static-hindinews/2023/12/teslaindia-637x435.jpg",
-    "publishedAt": "2024-04-03T15:20:35Z",
-    "content": "Tesla: 2 3 , 4,150 , , \r\n ,   , , \r\n, , , , \r\n 24,000    \r\n () 15 25 50 , 35,000 ( 29 ) , ,"
-    },
-    {
-    "source": {
-    "id": "business-insider",
-    "name": "Business Insider"
-    },
-    "author": "jsor@businessinsider.com (Jennifer Sor)",
-    "title": "Tesla could 'go bust' and plunge 91% because it's in a bubble and not growing, longtime bear says",
-    "description": "Tesla is arguably \"the biggest stock market bubble in modern history,\" said Per Lekander, an investor who's been shorting the stock since 2020.",
-    "url": "https://markets.businessinsider.com/news/stocks/tesla-stock-price-crash-bubble-bear-outlook-demand-per-lekander-2024-4",
-    "urlToImage": "https://i.insider.com/5b88338b80eb351f008b583f?width=1200&format=jpeg",
-    "publishedAt": "2024-04-03T15:20:29Z",
-    "content": "Tesla's stock is in a bubble and has \"no growth,\" which puts it at risk of \"going bust,\" according to hedge funder and longtime bear Per Lekander.\r\nLekander, who told CNBC he's shorted Tesla stock si… [+2633 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Feber.se"
-    },
-    "author": "Wille Wilhelmsson",
-    "title": "Ny trailer för Boy Kills World",
-    "description": "Ultravåld med Bill Skarsgård\n\n\n\n\n\n\n\n\n\n\nHär kommer en ny trailer för den kommande actionfilmen Boy Kills World där Bill Skarsgård spelar huvudrollen som den döve \"Boy\". Det ser ut att handla om en klassisk hämndrulle där Boy ger sig ut på en mordturné för att …",
-    "url": "https://feber.se/film/ny-trailer-for-boy-kills-world/466265/",
-    "urlToImage": "https://i.ytimg.com/vi/z6NibtjmjOk/hqdefault.jpg",
-    "publishedAt": "2024-04-03T15:20:00Z",
-    "content": "+\r\nLäs artiklar före alla andra\r\nKommentera före alla andra\r\nVälj periodJu längre period, desto bättre pris. Du bestämmer! \r\nMånad\r\n39 kr/mån\r\nKvartal\r\n33 kr/mån\r\nÅr\r\n25 kr/mån\r\nVälj hur du vill beta… [+34020 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "PR Daily"
-    },
-    "author": "Sean Devlin",
-    "title": "The Scoop: Microsoft had ‘cascade of errors’ that led to hack, government says",
-    "description": "Plus: Yahoo acquires Artifact AI news tool; Iowa-LSU game shatters sports betting record. A series of major mistakes was dubbed “a cascade of errors” which led to a Chinese hack of Microsoft, according to a U.S. government review. CNN reports that the infiltr…",
-    "url": "https://www.prdaily.com/the-scoop-microsoft-yahoo-artifact-college-basketball/",
-    "urlToImage": "https://s39940.pcdn.co/wp-content/uploads/2024/04/iStock-917844370.jpg",
-    "publishedAt": "2024-04-03T15:18:46Z",
-    "content": "A series of major mistakes was dubbed a cascade of errors which led to a Chinese hack of Microsoft, according to a U.S. government review. CNN reports that the infiltration included a breach of the t… [+5761 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "benzinga.com",
-    "title": "EV Realty and GreenPoint Partners Form Joint Venture for the Buildout of $200 Million in EV Charging Hubs",
-    "description": "SAN FRANCISCO, April 03, 2024 (GLOBE NEWSWIRE) -- (\"EV Realty\"), an EV infrastructure development platform powering commercial fleets, today announced the formation of a joint venture alongside (\"GreenPoint\"), an alternatives firm investing at the intersectio…",
-    "url": "https://biztoc.com/x/2bfbcd345ecfac5f",
-    "urlToImage": "https://c.biztoc.com/p/2bfbcd345ecfac5f/s.webp",
-    "publishedAt": "2024-04-03T15:18:04Z",
-    "content": "SAN FRANCISCO, April 03, 2024 (GLOBE NEWSWIRE) -- (\"EV Realty\"), an EV infrastructure development platform powering commercial fleets, today announced the formation of a joint venture alongside (\"Gre… [+306 chars]"
-    },
-    {
-    "source": {
-    "id": "la-nacion",
-    "name": "La Nacion"
-    },
-    "author": "LA NACION",
-    "title": "De dólar a peso mexicano: a cuánto cotiza la moneda hoy, miércoles 3 de abril",
-    "description": "Aquí se puede consultar un resumen completo de la situación económica en México y el valor de la divisa para este miércoles 3 de abril",
-    "url": "https://www.lanacion.com.ar/estados-unidos/de-dolar-a-peso-mexicano-a-cuanto-cotiza-la-moneda-hoy-miercoles-3-de-abril-nid03042024/",
-    "urlToImage": "https://resizer.glanacion.com/resizer/v2/de-dolar-a-peso-mexicano-la-cotizacion-del-XPRRYMVQFVF7FJH7Z7XGPYQHMY.jpg?auth=23314b9637afb08c99381bcb16b2d4fc0b019532cfdc5db3b1988cad154feca5&width=768&quality=70&smart=false",
-    "publishedAt": "2024-04-03T15:14:12Z",
-    "content": "Este miércoles 3 de abril, el precio del dólar en México es de $16,5673, de acuerdo con el Diario Oficial de la Federación (DOF), mientras que el que se vende en las ventanillas del Citibanamex es de… [+2440 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Forbes"
-    },
-    "author": "Derek Saul, Forbes Staff, \n Derek Saul, Forbes Staff\n https://www.forbes.com/sites/dereksaul/",
-    "title": "Here’s Why Disney Will Likely Win Proxy Fight With Peltz—And Why It Still Has To Worry",
-    "description": "“If circumstances get tougher at Disney, proxy battles could persist,” warned one analyst, indicative of the long-term headaches facing the entertainment conglomerate.",
-    "url": "https://www.forbes.com/sites/dereksaul/2024/04/03/heres-why-disney-will-likely-win-proxy-fight-with-peltz-and-why-it-still-has-to-worry/",
-    "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/65cd2892dd14c59d6b5c72ac/0x0.jpg?format=jpg&crop=2682,1508,x0,y57,safe&height=900&width=1600&fit=bounds",
-    "publishedAt": "2024-04-03T15:12:26Z",
-    "content": "Billionaire activist investor Nelson Peltzs high-profile proxy battle against Disney will come to a head Wednesday at the companys annual shareholder meeting, and, though reportssuggest Disney likely… [+3329 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Shiftdelete.net"
-    },
-    "author": "Yiğit Can Polat",
-    "title": "Togg’u telefondan kontrol etmek!",
-    "description": "Togg T10X artık telefondan kontrol edilebiliyor! Evet, yanlış duymadınız, artık Togg tam anlamıyla bağlantılı bir cihaza dönüştü.",
-    "url": "https://shiftdelete.net/togg-u-telefondan-kontrol-etmek",
-    "urlToImage": "https://ares.shiftdelete.net/2024/04/Toggu-telefondan-kontrol-etmek.jpg",
-    "publishedAt": "2024-04-03T15:11:36Z",
-    "content": "Günümüz tarihi bir gün çünkü yanmda bulunan Togg T10X artk telefondan kontrol edilebiliyor! Evet, yanl duymadnz, artk Togg tam anlamyla balantl bir cihaza dönütü. Togg T10X u anda tam anlamyla bir ci… [+2296 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Investing.com"
-    },
-    "author": "Investing.com",
-    "title": "Midday movers: Intel, Ulta Beauty fall; Spotify rises",
-    "description": "Midday movers: Intel, Ulta Beauty fall; Spotify rises",
-    "url": "https://www.investing.com/news/stock-market-news/intel-tesla-tsmc-fall-premarket-calmaine-rises-3363702",
-    "urlToImage": "https://i-invdn-com.investing.com/news/moved_LYNXNPEI2D0PS_L.jpg",
-    "publishedAt": "2024-04-03T15:11:02Z",
-    "content": "(Updated - April 3, 2024 11:08 AM EDT)\r\nInvesting.com -- Main U.S. indexes gained Wednesday after data on the services sector indicated some softening, improving the outlook for potential Fed rate cu… [+1969 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Aristeguinoticias.com"
-    },
-    "author": "Redacción AN / JEPM",
-    "title": "Samuel García gobernará por horario y el resto del día opinará sobre contienda electoral; ‘Tengo vida’",
-    "description": "El gobernador de Nuevo León, Samuel García, anunció que durante la época electoral tendrá un horario laboral fijo de 9:00 a 17:00 horas para que el resto del día pueda opinar, sin ninguna restricción, sobre los comicios del 2 de junio.",
-    "url": "https://aristeguinoticias.com/0304/mexico/samuel-garcia-gobernara-por-horario-y-el-resto-del-dia-opinara-sobre-contienda-electoral-tengo-vida/",
-    "urlToImage": "https://editorial.aristeguinoticias.com/wp-content/uploads/2024/04/samu-boy.jpg",
-    "publishedAt": "2024-04-03T15:07:31Z",
-    "content": "El gobernador de Nuevo León, Samuel García, anunció a través de un video publicado en sus redes sociales que durante los próximos dos meses que dura la época electoral tendrá un horario laboral fijo … [+1407 chars]"
-    },
-    {
-    "source": {
-    "id": "focus",
-    "name": "Focus"
-    },
-    "author": "FOCUS online",
-    "title": "Auch Tesla betroffen - 1 Billion Dollar verbrannt: E-Auto-Aktien im freien Fall",
-    "description": "Der Marktwert der Elektroauto-Hersteller hat seit seinem Boom im Jahr 2021 fast eine Billion Dollar verloren. Insbesondere zehn der größten US-Hersteller, darunter Tesla, Rivian und Lucid, verzeichneten enorme Einbußen.",
-    "url": "https://www.focus.de/finanzen/boerse/tesla-betroffen-1-billion-dollar-vernichtet-aktien-fuer-e-autos-sind-im-freien-fall_id_259815403.html",
-    "urlToImage": "https://p6.focus.de/img/fotos/id_259815356/elon-musk.jpg?im=Crop%3D%280%2C288%2C3464%2C1732%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=3809622cf1d0c9c9ae7425ce14a60ab50ae7df0ba3822eaf44e2d8649e7b16a9",
-    "publishedAt": "2024-04-03T15:07:03Z",
-    "content": "<ul><li>\r\nKommentare</li><li>\r\nE-Mail</li><li>\r\nTeilen</li><li>\r\nMehr</li><li>\r\nTwitter</li><li>\r\nDrucken</li><li>\r\nFeedback</li><li>\r\nFehler meldenSie haben einen Fehler gefunden?\r\nBitte markieren S… [+4175 chars]"
-    },
-    {
-    "source": {
-    "id": "focus",
-    "name": "Focus"
-    },
-    "author": "FOCUS online",
-    "title": "Auch Tesla betroffen - 1 Billion Dollar verbrannt: E-Auto-Aktien im freien Fall",
-    "description": "Der Marktwert der Elektroauto-Hersteller hat seit seinem Boom im Jahr 2021 fast eine Billion Dollar verloren. Insbesondere zehn der größten US-Hersteller, darunter Tesla, Rivian und Lucid, verzeichneten enorme Einbußen.",
-    "url": "https://www.focus.de/finanzen/boerse/tesla-betroffen-e-auto-aktien-im-freien-fall-1-billion-dollar-verbrannt_id_259815403.html",
-    "urlToImage": "https://p6.focus.de/img/fotos/id_259815356/elon-musk.jpg?im=Crop%3D%280%2C288%2C3464%2C1732%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=3809622cf1d0c9c9ae7425ce14a60ab50ae7df0ba3822eaf44e2d8649e7b16a9",
-    "publishedAt": "2024-04-03T15:07:03Z",
-    "content": "<ul><li>\r\nKommentare</li><li>\r\nE-Mail</li><li>\r\nTeilen</li><li>\r\nMehr</li><li>\r\nTwitter</li><li>\r\nDrucken</li><li>\r\nFeedback</li><li>\r\nFehler meldenSie haben einen Fehler gefunden?\r\nBitte markieren S… [+4146 chars]"
-    },
-    {
-    "source": {
-    "id": "focus",
-    "name": "Focus"
-    },
-    "author": "FOCUS online",
-    "title": "Auch Tesla betroffen - 1 Billion Dollar verbrannt: E-Auto-Aktien im freien Fall",
-    "description": "Der Marktwert der Elektroauto-Hersteller hat seit seinem Boom im Jahr 2021 fast eine Billion Dollar verloren. Insbesondere zehn der größten US-Hersteller, darunter Tesla, Rivian und Lucid, verzeichneten enorme Einbußen.",
-    "url": "https://www.focus.de/finanzen/boerse/tesla-betroffen-fast-eine-billion-dollar-verbrannt-e-auto-aktien-im-freien-fall_id_259815403.html",
-    "urlToImage": "https://p6.focus.de/img/fotos/id_259815356/elon-musk.jpg?im=Crop%3D%280%2C288%2C3464%2C1732%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=3809622cf1d0c9c9ae7425ce14a60ab50ae7df0ba3822eaf44e2d8649e7b16a9",
-    "publishedAt": "2024-04-03T15:07:03Z",
-    "content": "<ul><li>\r\nKommentare</li><li>\r\nE-Mail</li><li>\r\nTeilen</li><li>\r\nMehr</li><li>\r\nTwitter</li><li>\r\nDrucken</li><li>\r\nFeedback</li><li>\r\nFehler meldenSie haben einen Fehler gefunden?\r\nBitte markieren S… [+4146 chars]"
-    },
-    {
-    "source": {
-    "id": "focus",
-    "name": "Focus"
-    },
-    "author": "FOCUS online",
-    "title": "Auch Tesla betroffen - 1 Billion Dollar verbrannt: E-Auto-Aktien im freien Fall",
-    "description": "Der Marktwert der Elektroauto-Hersteller hat seit seinem Boom im Jahr 2021 fast eine Billion Dollar verloren. Insbesondere zehn der größten US-Hersteller, darunter Tesla, Rivian und Lucid, verzeichneten enorme Einbußen.",
-    "url": "https://www.focus.de/finanzen/boerse/tesla-betroffen-fast-eine-billion-dollar-verbrannt-e-auto-aktien-sind-im-freien-fall_id_259815403.html",
-    "urlToImage": "https://p6.focus.de/img/fotos/id_259815356/elon-musk.jpg?im=Crop%3D%280%2C288%2C3464%2C1732%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=3809622cf1d0c9c9ae7425ce14a60ab50ae7df0ba3822eaf44e2d8649e7b16a9",
-    "publishedAt": "2024-04-03T15:07:03Z",
-    "content": "<ul><li>\r\nKommentare</li><li>\r\nE-Mail</li><li>\r\nTeilen</li><li>\r\nMehr</li><li>\r\nTwitter</li><li>\r\nDrucken</li><li>\r\nFeedback</li><li>\r\nFehler meldenSie haben einen Fehler gefunden?\r\nBitte markieren S… [+4146 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Journal du geek"
-    },
-    "author": "Thomas Estimbre",
-    "title": "Ce constructeur de voitures électriques est au bord de la faillite",
-    "description": "La catastrophe se profile pour le constructeur automobile américain Fisker, présent en France avec sa voiture électrique Ocean. Dans une situation financière délicate, il fait face à l'annulation de 40 000 réservations. L'avenir s'assombrit et la faillite se …",
-    "url": "https://www.journaldugeek.com/2024/04/03/ce-constructeur-de-voitures-electriques-est-au-bord-de-la-faillite/",
-    "urlToImage": "https://www.journaldugeek.com/app/uploads/2024/04/Fisker-Ocean-Graz-MultiColor.jpg",
-    "publishedAt": "2024-04-03T15:03:11Z",
-    "content": "Fisker est au plus mal et se retrouve aujourd’hui au bord de la faillite. Ce constructeur automobile américain joue sa survie et les dernières nouvelles sont dramatiques. Nous avons récemment appris … [+3550 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Expansion.com"
-    },
-    "author": "Esperanza Balaguer",
-    "title": "Taylor Swift entra en la lista de multimillonarios más ricos del mundo",
-    "description": "La cantante Taylor Swift continúa la buena racha que comenzó el año pasado con el éxito de su gira mundial The Eras Tour. La avalancha de asistentes a sus conciertos le ha hecho entrar por primera vez en la lista de los más ricos del mundo. Leer",
-    "url": "https://www.expansion.com/economia/2024/04/03/660d6dbbe5fdea96578b4593.html",
-    "urlToImage": "https://phantom-expansion.unidadeditorial.es/7796d715e9e2432a0a4c762602a5209f/crop/206x65/1842x1156/resize/1200/f/webp/assets/multimedia/imagenes/2024/04/03/17121562945776.jpg",
-    "publishedAt": "2024-04-03T15:02:43Z",
-    "content": "La cantante Taylor Swift continúa la buena racha que comenzó el año pasado con el éxito de su gira mundial The Eras Tour. La avalancha de asistentes a sus conciertos le ha hecho entrar por primera ve… [+4483 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "cnn.com",
-    "title": "Tesla has a big competitor. And it is Chinese",
-    "description": "Editor’s Note: Sign up for CNN’s Meanwhile in China newsletter which explores what you need to know about the country’s rise and how it impacts the world. In 1995, metallurgy graduate Wang Chuanfu founded BYD, a small Chinese company focused on producing rech…",
-    "url": "https://biztoc.com/x/0a771e511e6a7bb9",
-    "urlToImage": "https://c.biztoc.com/p/0a771e511e6a7bb9/og.webp",
-    "publishedAt": "2024-04-03T15:02:06Z",
-    "content": "Editors Note: Sign up for CNNs Meanwhile in China newsletter which explores what you need to know about the countrys rise and how it impacts the world.In 1995, metallurgy graduate Wang Chuanfu founde… [+284 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Freerepublic.com"
-    },
-    "author": "Breitbart",
-    "title": "Buttigieg: Opposing Electric Cars Is Like Wanting ‘Landline Phones Forever’",
-    "description": "Secretary of Transportation Pete Buttigieg said Tuesday on Fox News Channel’s “America Reports” that people who do not want electric cars were like those who wanted “landline phones forever.” Buttigieg said, “Let’s be clear consumers have wanted and purchased…",
-    "url": "https://freerepublic.com/focus/f-news/4228715/posts",
-    "urlToImage": null,
-    "publishedAt": "2024-04-03T15:01:43Z",
-    "content": "Skip to comments.\r\nButtigieg: Opposing Electric Cars Is Like Wanting Landline Phones ForeverBreitbart ^\r\n | 04/03/2024\r\n | Pam Key\r\nPosted on 04/03/2024 8:01:43 AM PDT by ChicagoConservative27\r\nSecre… [+6464 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Xataka.com"
-    },
-    "author": "Alberto de la Torre",
-    "title": "\"Conducir un Tesla otorga estatus\": los aprendizajes de BYD para que el coche eléctrico chino triunfe en Europa",
-    "description": "Trabajó para Ford en China durante gran parte de su carrera y ahora es uno de los hombres fuertes de BYD en Europa. Sun Yi forma parte de los altos ejecutivos que la firma china ha puesto a trabajar en suelo europeo para adaptarse a nuestros gustos y entender…",
-    "url": "https://www.xataka.com/movilidad/conducir-tesla-otorga-estatus-aprendizajes-byd-coche-electrico-chino-triunfe-europa",
-    "urlToImage": "https://i.blogs.es/e62363/65bc0e0a0daad53ef234aaba_dsc04967-20copia/840_560.jpeg",
-    "publishedAt": "2024-04-03T15:00:49Z",
-    "content": "Trabajó para Ford en China durante gran parte de su carrera y ahora es uno de los hombres fuertes de BYD en Europa. Sun Yi forma parte de los altos ejecutivos que la firma china ha puesto a trabajar … [+5149 chars]"
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Biztoc.com"
-    },
-    "author": "bizjournals.com",
-    "title": "Federal judge rules EEOC can proceed with Tesla discrimination lawsuit",
-    "description": "EV maker in hot water over alleged discrimination and retaliation against Black employees at Fremont plant. #fremont",
-    "url": "https://biztoc.com/x/680f66417eac8686",
-    "urlToImage": "https://c.biztoc.com/p/680f66417eac8686/s.webp",
-    "publishedAt": "2024-04-03T15:00:27Z",
-    "content": "EV maker in hot water over alleged discrimination and retaliation against Black employees at Fremont plant.\r\n#fremont\r\nThis story appeared on bizjournals.com, ."
-    },
-    {
-    "source": {
-    "id": null,
-    "name": "Diariomotor.com"
-    },
-    "author": "David Villarreal",
-    "title": "El drama del SUV de lujo que vino a comerse a Tesla y ahora puedes comprártelo a precio de Toyota Corolla",
-    "description": "Los talluditos, que ya llevamos un tiempo en esto, nos acordamos de una época en el que el coche eléctrico de moda, entre famosos, emprendedores, estrellas de la televisión y el cine, no era un Tesla, y ni mucho menos su último gran éxito, el Cybertruck. Hace…",
-    "url": "https://www.diariomotor.com/noticia/desplome-precios-fisker-ocean/",
-    "urlToImage": "https://www.diariomotor.com/imagenes/2024/04/fisker-ocean-2024.jpg",
-    "publishedAt": "2024-04-03T15:00:18Z",
-    "content": "Los talluditos, que ya llevamos un tiempo en esto, nos acordamos de una época en el que el coche eléctrico de moda, entre famosos, emprendedores, estrellas de la televisión y el cine, no era un Tesla… [+3638 chars]"
-    }
-    ]
-    }
-    )
+    res.send(
+        {
+        "status": "ok",
+        "totalResults": 36206,
+        "articles": [
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "India build big lead despite Stokes' return wicket",
+        "description": "England look on course for defeat by India in the fifth Test after the hosts build a lead of 255 runs on day two in Dharamsala.",
+        "url": "https://www.bbc.co.uk/sport/cricket/68500387",
+        "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/15E06/production/_132860698_rohitsharmaandshubmangill.jpg",
+        "publishedAt": "2024-03-08T11:20:47Z",
+        "content": "Ben Stokes had not bowled competitively since last year's Ashes series in England\r\n<table><tr><th>Fifth Test, Dharamsala (day two of five):</th></tr>\r\n<tr><td>England 218: Crawley 79; Kuldeep 5-72, A… [+5024 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "England look for quick wickets to wrap up India innings",
+        "description": "Follow live text updates from day three of the fifth Test between India and England in Dharamsala.",
+        "url": "https://www.bbc.co.uk/sport/live/cricket/67781550",
+        "urlToImage": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.23.3/images/bbc-sport-logo.png",
+        "publishedAt": "2024-03-08T12:06:14Z",
+        "content": "England did go into their shells a little in the first innings but India were were proactive and it served them very well. England will want to show a bit more proactiveness without being reckless. \r… [+388 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "India v England: Fifth Test, day one - text updates",
+        "description": "Follow live text updates from day one of the fifth Test between India and England in Dharamsala.",
+        "url": "https://www.bbc.co.uk/sport/live/cricket/67781543",
+        "urlToImage": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.23.3/images/bbc-sport-logo.png",
+        "publishedAt": "2024-03-06T15:31:35Z",
+        "content": "Dharamsala is this week's venue and judging from the England players' social media, it looks like an absolute stunner. \r\nI was lucky enough to visit Newlands in Cape Town last year and both are surel… [+419 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "India resume on 135-1, just 83 behind England on day two",
+        "description": "Follow live text updates from day two of the fifth Test between India and England in Dharamsala.",
+        "url": "https://www.bbc.co.uk/sport/live/cricket/67781547",
+        "urlToImage": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.23.3/images/bbc-sport-logo.png",
+        "publishedAt": "2024-03-08T03:37:13Z",
+        "content": "Morning!\r\nA first-innings total of 218, after winning the toss, has left England behind in the game. \r\nit got worse when India reached 135-1 at close, just 83 runs behind.\r\nThe pitch in Dharamsala lo… [+96 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "'Exposed' England have 'thinking' to do - McCullum",
+        "description": "England have been \"exposed\" in India and have some \"deep thinking\" ahead, according to coach Brendon McCullum.",
+        "url": "https://www.bbc.co.uk/sport/cricket/68528077",
+        "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/15836/production/_132881188_brendonmccullum.jpg",
+        "publishedAt": "2024-03-10T12:47:13Z",
+        "content": "England have lost seven of their past 12 Tests\r\nEngland have been \"exposed\" in India and have some \"deep thinking\" ahead, according to coach Brendon McCullum.\r\nThe tourists won the first Test but the… [+5395 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "Wood replaces Robinson for fifth Test",
+        "description": "Mark Wood replaces fellow seamer Ollie Robinson in England's only change for the final Test against India in Dharamsala starting on Thursday.",
+        "url": "https://www.bbc.co.uk/sport/cricket/68488004",
+        "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/11787/production/_124395517_bbcbreakingnewsgraphic.jpg",
+        "publishedAt": "2024-03-06T07:42:40Z",
+        "content": "<table><tr><th>India v England, fifth Test</th></tr>\r\n<tr><td>Venue: Himachal Pradesh CA Stadium, Dharamsala Dates: 7-11 March Time: 04:00 GMT</td></tr><tr><td>Coverage: Live text commentary on the B… [+1035 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+        },
+        "author": "Maxwell Zeff",
+        "title": "10 Modern ‘Mechanical Turks’: When Automation Is Just Humans in Disguise",
+        "description": "Amazon’s grocery stores ditched their “Just Walk Out” technology on Tuesday, though it turned out the automated checkout system included 1,000 reviewers in India. However, this is hardly the only example of times when automation breakthroughs were nothing mor…",
+        "url": "https://gizmodo.com/modern-mechanical-turks-automation-humans-in-disguise-1851382957",
+        "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/56fbb74a489b621416392f3cdda838e4.jpg",
+        "publishedAt": "2024-04-03T12:00:00Z",
+        "content": "Amazons grocery stores ditched their Just Walk Out technology on Tuesday, though it turned out the automated checkout system included 1,000 reviewers in India. However, this is hardly the only exampl… [+1528 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Slashdot.org"
+        },
+        "author": "BeauHD",
+        "title": "India Drops Plan To Require Approval For AI Model Launches",
+        "description": "An anonymous reader quotes a report from TechCrunch: India is walking back on a recent AI advisory after receiving criticism from many local and global entrepreneurs and investors. The Ministry of Electronics and IT shared an updated AI advisory with industry…",
+        "url": "https://yro.slashdot.org/story/24/03/15/1953258/india-drops-plan-to-require-approval-for-ai-model-launches",
+        "urlToImage": "https://a.fsdn.com/sd/topics/ai_64.png",
+        "publishedAt": "2024-03-15T20:50:00Z",
+        "content": "India is walking back on a recent AI advisory after receiving criticism from many local and global entrepreneurs and investors. The Ministry of Electronics and IT shared an updated AI advisory with i… [+1535 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Fans stunned as Ed Sheeran sings in Punjabi",
+        "description": "The star teamed up with Indian singer Diljit Dosanjh at his concert in Mumbai, delighting the crowd.",
+        "url": "https://www.bbc.co.uk/news/entertainment-arts-68590845",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0BE5/production/_132354030_f0c9870f4b4e1b2ce95ae3aec95cafc1bca3ab34.jpg",
+        "publishedAt": "2024-03-17T10:50:28Z",
+        "content": "Ed Sheeran has sung in Punjabi for the first time during his concert in Mumbai, leaving fans stunned and setting social media ablaze.\r\nDuring the show on Saturday night, the English superstar invited… [+1734 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "[Removed]"
+        },
+        "author": null,
+        "title": "[Removed]",
+        "description": "[Removed]",
+        "url": "https://removed.com",
+        "urlToImage": null,
+        "publishedAt": "1970-01-01T00:00:00Z",
+        "content": "[Removed]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "[Removed]"
+        },
+        "author": null,
+        "title": "[Removed]",
+        "description": "[Removed]",
+        "url": "https://removed.com",
+        "urlToImage": null,
+        "publishedAt": "1970-01-01T00:00:00Z",
+        "content": "[Removed]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "ReadWrite"
+        },
+        "author": "Graeme Hanna",
+        "title": "India revises approval stance on AI model launches",
+        "description": "Amidst a torrent of backlash from industry experts, India’s regulatory authorities have backtracked on their planned framework for the deployment… Continue reading India revises approval stance on AI model launches\nThe post India revises approval stance on AI…",
+        "url": "https://readwrite.com/india-revises-approval-stance-on-ai-model-launches/",
+        "urlToImage": "https://readwrite.com/wp-content/uploads/2024/03/lIhOCThxSiqDf6QcV2v0Nw.png",
+        "publishedAt": "2024-03-18T15:41:47Z",
+        "content": "Amidst a torrent of backlash from industry experts, India’s regulatory authorities have backtracked on their planned framework for the deployment of cutting-edge artificial intelligence (AI) technolo… [+1824 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+        "title": "Motorola Edge 50 Pro with Snapdragon 7 Gen 3 is launching early next month",
+        "description": "Motorola is gearing up to launch its next mid-range phone in India on April 3. It packs a host of impressive specs for its segment.",
+        "url": "https://www.androidcentral.com/phones/motorola-edge-50-pro-launching-on-april-3-2024",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/rHBUZmjMQT4SL5jd7oxRpE-1200-80.jpg",
+        "publishedAt": "2024-03-25T15:45:15Z",
+        "content": "What you need to know\r\n<ul><li>Motorola Edge 50 Pro is launching in India on April 3.</li><li>The device is listed on the country's Flipkart e-commerce site.</li><li>The listing reveals most of the d… [+2684 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+        "title": "Samsung launches Galaxy F15 with an impressive 6000mAh battery for India",
+        "description": "Samsung has a new budget smartphone named Galaxy F15 that offers several segment-exclusive features for the Indian market.",
+        "url": "https://www.androidcentral.com/phones/samsung-galaxy-f15-announced-for-india",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/W2kxjgtLvzsztzYMbKJRFD-1200-80.jpg",
+        "publishedAt": "2024-03-05T18:35:22Z",
+        "content": "<ul><li>Samsung introduces Galaxy F15 with notable specs for the Indian market.</li><li>It comes with a 6.5-inch AMOLED display with 90Hz refresh rates.</li><li>The budget device is powered by MediaT… [+2301 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "WATCH: Indian boy calmly traps wandering leopard",
+        "description": "The leopard was later tranquillised and rescued by wildlife officials in Maharashtra state.",
+        "url": "https://www.bbc.co.uk/news/av/world-asia-india-68499209",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/06EF/production/_132857710_p0hh3p20.jpg",
+        "publishedAt": "2024-03-07T09:40:29Z",
+        "content": "Imagine you're casually scrolling through your phone and a leopard walks into the room.\r\nThat's what happened to 12-year-old Mohit Ahire from the western Indian state of Maharashtra this week. He was… [+508 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Gouri Sharma",
+        "title": "I bought my first house in rural Scotland at 22. Housing is affordable in the countryside and I love it here.",
+        "description": "After moving from India to Scotland for university, Simran Kaur decided to settle in the countryside and bought her first house at 22.",
+        "url": "https://www.businessinsider.com/how-i-bought-my-first-house-22-2024-3",
+        "urlToImage": "https://i.insider.com/65e7116b90413ab8e1d9276c?width=1200&format=jpeg",
+        "publishedAt": "2024-03-06T10:00:19Z",
+        "content": "Simran Kaur loves countryside living in Kilmarnock, Scotland, where she moved after studying in Glasgow for four years.Peter Mulligan/Getty Images\r\n<ul><li>Simran Kaur is a 22-year-old tax associate … [+5242 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Dan Latu",
+        "title": "The Ambani family owns the world's most expensive private residence. Take a look at their Mumbai tower, Antilia, which cost $1 billion to build, has 3 helipads, and contains a 168-car garage.",
+        "description": "The Ambanis, the richest family in India and one of the wealthiest in the world, built a 27-story home on Mumbai's Billionaire's Row.",
+        "url": "https://www.businessinsider.com/ambani-house-photos-altamount-road-mumbai-spa-parking-amenities-art-2024-3",
+        "urlToImage": "https://i.insider.com/65e74c4790413ab8e1d9465a?width=1200&format=jpeg",
+        "publishedAt": "2024-03-07T03:57:44Z",
+        "content": "The Ambanis' tower, called Antilia, rises above the Mumbai skyline.Ashwin Nagpal\r\n<ul><li>The Ambani family, which just threw a pre-wedding party for son Anant, has built a tower in Mumbai. </li><li>… [+4568 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Alex Bitter",
+        "title": "Amazon's Just Walk Out technology relies on hundreds of workers in India watching you shop",
+        "description": "Amazon promoted Just Walk Out as AI-powered cashierless technology. But the tech reportedly relied on workers in India for accuracy.",
+        "url": "https://www.businessinsider.com/amazons-just-walk-out-actually-1-000-people-in-india-2024-4",
+        "urlToImage": "https://i.insider.com/660d66df3f923f7dab040be4?width=1200&format=jpeg",
+        "publishedAt": "2024-04-03T17:10:56Z",
+        "content": "Amazon is pulling its Just Walk Out cashierless technology from its Amazon Fresh grocery stores.Reuters/HENRY NICHOLLS\r\n<ul><li>Amazon has spent years promoting its AI-based checkout-free Just Walk O… [+2864 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Abby Narishkin,Benjamin Nigh,Dorian Barranco",
+        "title": "Why melted bugs on candy and lemons fuel a $167 million industry",
+        "description": "Jelly beans, Junior Mints, and lemons are all coated with a shiny resin called shellac. It's made from tiny insects in India, and it's safe to eat.",
+        "url": "https://www.businessinsider.com/why-melted-bugs-candy-lemons-are-behind-167-million-industry-2024-3",
+        "urlToImage": "https://i.insider.com/65f458773037f8e81750bd04?width=1200&format=jpeg",
+        "publishedAt": "2024-03-15T14:48:19Z",
+        "content": "Read the original article on Business Insider"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Abby Narishkin,Benjamin Nigh,Dorian Barranco",
+        "title": "Why melted bugs on candy and lemons fuel a $267 million industry",
+        "description": "Jelly beans, Junior Mints, and lemons are all coated with a shiny resin called shellac. It's made from tiny insects in India, and it's safe to eat.",
+        "url": "https://www.businessinsider.com/why-melted-bugs-candy-lemons-are-behind-267-million-industry-2024-3",
+        "urlToImage": "https://i.insider.com/65f458773037f8e81750bd04?width=1200&format=jpeg",
+        "publishedAt": "2024-03-15T14:29:43Z",
+        "content": "Read the original article on Business Insider"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Jyoti Mann",
+        "title": "I'm a software engineer for Nvidia. Here's how I landed the job — and how much I'm making.",
+        "description": "A Nvidia software engineer in India says the technical interviews for the job were \"pretty hard,\" but breaks down how to navigate them.",
+        "url": "https://www.businessinsider.com/nvidia-software-engineer-how-landed-job-preparation-culture-interviews-2024-4",
+        "urlToImage": "https://i.insider.com/659a6ad16979d7371821152c?width=1200&format=jpeg",
+        "publishedAt": "2024-04-02T13:12:42Z",
+        "content": "Nvidia's stock price has soared in recent months, making options more valuable.NurPhoto / Getty\r\n<ul><li>A software engineer at Nvidia in India reveals how he got the job, and breaks down his compens… [+4023 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Joshua Zitser,Spriha Srivastava",
+        "title": "The extravagant Ambani pre-wedding party was an affront to the millions of Indians in poverty, critics say",
+        "description": "The pre-wedding events for Anant Ambani and Radhika Merchant, which featured Rihanna, show a blatant disregard for poverty in India, Indians said.",
+        "url": "https://www.businessinsider.com/anant-ambani-pre-wedding-festivities-lack-empathy-india-radhika-merchant-2024-3",
+        "urlToImage": "https://i.insider.com/65eb10cace7f1785b2e7b8cc?width=1200&format=jpeg",
+        "publishedAt": "2024-03-08T14:09:39Z",
+        "content": "Anant Ambani at the pre-wedding festivities and a slum in New Delhi, India, in a composite image.Reuters Connect\r\n<ul><li>The pre-wedding festivities for Anant Ambani and Radhika Merchant cost many m… [+4822 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Slashdot.org"
+        },
+        "author": "msmash",
+        "title": "India Cuts Import Taxes on EVs in Boost For Tesla's Entry Plans",
+        "description": "India will lower import taxes on certain electric vehicles for companies committing to invest at least $500 million and setting up a local manufacturing facility within three years, a policy shift that could potentially bolster Tesla's plans to enter the Sout…",
+        "url": "https://tech.slashdot.org/story/24/03/15/1341218/india-cuts-import-taxes-on-evs-in-boost-for-teslas-entry-plans",
+        "urlToImage": "https://a.fsdn.com/sd/topics/transportation_64.png",
+        "publishedAt": "2024-03-15T14:40:00Z",
+        "content": "Obviously it's good that India is moving towards EVs, but Teslas aren't exactly affordable in the West. What they need are the super cheap Eastern European and Chinese models. Dacia has one coming ou… [+200 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "Why Bell put England before a £30,000 WPL deal",
+        "description": "England fast bowler Lauren Bell discusses withdrawing from the Women's Premier League, her ambitions for 2024 and her growing responsibility in Heather Knight's team.",
+        "url": "https://www.bbc.co.uk/sport/cricket/68565691",
+        "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/1730/production/_132963950_gettyimages-1508864769.jpg",
+        "publishedAt": "2024-03-20T14:00:41Z",
+        "content": "Lauren Bell has become one of the leaders of England's bowling attack in all formats since her debut in 2022\r\nLauren Bell is not even two years into her international career, and yet her trajectory -… [+3774 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+        },
+        "author": null,
+        "title": "Czech Republic's Krystyna Pyszková is crowned Miss World in India",
+        "description": null,
+        "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_21e07a4f-433e-44d0-9b1e-d1a079c7c57d",
+        "urlToImage": null,
+        "publishedAt": "2024-03-10T03:51:39Z",
+        "content": "Si vous cliquez sur « Tout accepter », nos partenaires (y compris 241 qui font partie du Cadre de transparence et de consentement dIAB) et nous utiliserons également des témoins et vos données person… [+982 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "[Removed]"
+        },
+        "author": null,
+        "title": "[Removed]",
+        "description": "[Removed]",
+        "url": "https://removed.com",
+        "urlToImage": null,
+        "publishedAt": "1970-01-01T00:00:00Z",
+        "content": "[Removed]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "techkritiko@gmail.com (Jay Bonggolto)",
+        "title": "The Motorola Edge 50 Pro could make its debut in early April",
+        "description": "It seems like the Motorola Edge 50 Pro launch is right around the corner now.",
+        "url": "https://www.androidcentral.com/phones/motorola-edge-50-pro-debut-in-early-april",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/WcUy6ZmSfkE36NMqWeU7cK-1200-80.jpg",
+        "publishedAt": "2024-03-18T21:32:16Z",
+        "content": "What you need to know\r\n<ul><li>Motorola is gearing up to launch its next flagship phone in India soon, specifically the Motorola Edge 50 Pro.</li><li>Although a specific date wasn't mentioned, a tips… [+2973 chars]"
+        },
+        {
+        "source": {
+        "id": "wired",
+        "name": "Wired"
+        },
+        "author": "Sabrina Weiss",
+        "title": "How to Stay Cool Without Warming the Planet",
+        "description": "The race is on to create climate-friendly air-con technology.",
+        "url": "https://www.wired.com/story/aircon-climate-co2-emissions/",
+        "urlToImage": "https://media.wired.com/photos/65b174a342a7a338235d6c5f/191:100/w_1280,c_limit/GettyImages-1233709080.jpg",
+        "publishedAt": "2024-03-20T03:45:09Z",
+        "content": "There is an insidious irony to climate change: as it gets hotter, more and more people are cranking up their air conditioners, which in turn contributes to global warming. Air conditioner (AC) sales … [+3114 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+        },
+        "author": "Gordon Jackson and James Whitbrook",
+        "title": "Steven Moffat Talks Returning to Doctor Who",
+        "description": "The Bad Guys will return next year. The First Omen goes retro in its new TV spot. Get a look at Roku’s take on The Spiderwick Chronicles. Plus, the X-Men go to hell in a look at today’s episode of X-Men ‘97, and what’s to come on Resident Alien. To me, my spo…",
+        "url": "https://gizmodo.com/steven-moffat-doctor-who-return-bbc-russell-t-davies-1851367228",
+        "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/357921e098f35bca3d2e5de498410ba8.png",
+        "publishedAt": "2024-03-27T14:15:00Z",
+        "content": "The Bad Guys will return next year. The First Omen goes retro in its new TV spot. Get a look at Rokus take on The Spiderwick Chronicles. Plus, the X-Men go to hell in a look at todays episode of X-Me… [+1943 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "WhatsApp, Instagram and Facebook apps hit by outage",
+        "description": "Users on Meta platforms suffer access problems as thousands report outages on Wednesday evening.",
+        "url": "https://www.bbc.co.uk/news/business-68727854",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/10008/production/_132844556_gettyimages-1841474590.jpg",
+        "publishedAt": "2024-04-03T21:11:02Z",
+        "content": "WhatsApp, Facebook and Instagram have all gone down briefly as part of a major outage at parent company Meta. \r\nThousands of app users reported issues accessing the three sites late on Wednesday, wit… [+1590 chars]"
+        },
+        {
+        "source": {
+        "id": "time",
+        "name": "Time"
+        },
+        "author": "Billy Perrigo",
+        "title": "Exclusive: YouTube Approved Ads Promoting Disinformation on India’s Election",
+        "description": "YouTube approved dozens of ads promoting voter suppression and incitement to violence ahead of the upcoming election in India.",
+        "url": "https://time.com/6961504/youtube-ads-disinformation-india-election/",
+        "urlToImage": "https://api.time.com/wp-content/uploads/2024/03/indian-election-youtube-disinformation.jpg?quality=85",
+        "publishedAt": "2024-04-02T10:30:00Z",
+        "content": "YouTube approved dozens of ads promoting voter suppression and incitement to violence ahead of the upcoming election in India, according to a new investigation by the rights groups Global Witness and… [+8560 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+        },
+        "author": "Aditya Kalra, David Lawder and Shivangi  Acharya",
+        "title": "Exclusive-India 'screwed up': How the U.S. lobbied New Delhi to reverse laptop rules",
+        "description": "India reversed a laptop licensing policy after behind-the-scenes lobbying by U.S. officials, who however remain concerned about New Delhi's compliance with...",
+        "url": "https://ca.news.yahoo.com/exclusive-india-screwed-u-lobbied-050825336.html",
+        "urlToImage": "https://media.zenfs.com/en/reuters.com/4776fcf0ea42ded284d368b2c48c5c2f",
+        "publishedAt": "2024-03-21T05:08:25Z",
+        "content": "By Aditya Kalra, David Lawder and Shivangi Acharya\r\nNEW DELHI/WASHINGTON (Reuters) - India reversed a laptop licensing policy after behind-the-scenes lobbying by U.S. officials, who however remain co… [+5606 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Slashdot.org"
+        },
+        "author": "BeauHD",
+        "title": "Only Seven Countries Meet WHO Air Quality Standard, Research Finds",
+        "description": "An anonymous reader quotes a report from The Guardian: Only seven countries are meeting an international air quality standard, with deadly air pollution worsening in places due to a rebound in economic activity and the toxic impact of wildfire smoke, a new re…",
+        "url": "https://news.slashdot.org/story/24/03/19/2145211/only-seven-countries-meet-who-air-quality-standard-research-finds",
+        "urlToImage": "https://a.fsdn.com/sd/topics/earth_64.png",
+        "publishedAt": "2024-03-20T03:33:00Z",
+        "content": "Only seven countries are meeting an international air quality standard, with deadly air pollution worsening in places due to a rebound in economic activity and the toxic impact of wildfire smoke, a n… [+2445 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Lauren Edmonds",
+        "title": "You probably missed one of the biggest shows of wealth at the Ambanis' pre-wedding celebration, and it had nothing to do with the bride and groom",
+        "description": "Nita Ambani casually wore an enormous emerald necklace and a 52.58-carat diamond ring dubbed the Mirror of Paradise.",
+        "url": "https://www.businessinsider.com/nita-ambani-jewelry-at-anant-ambani-pre-wedding-celebration-2024-3",
+        "urlToImage": "https://i.insider.com/65ea30de90413ab8e1da8e93?width=1200&format=jpeg",
+        "publishedAt": "2024-03-07T22:43:19Z",
+        "content": "Mukesh Ambani, the chairman of Reliance Industries, his wife Nita Ambani, and their son Anant Ambani.Reliance Industries/Handout via REUTERS\r\n<ul><li>The Ambani family hosted a lavish pre-wedding cel… [+2927 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "India rescues citizens caught in Cambodia scams",
+        "description": "India said it has saved and repatriated 75 citizens in the past three months, and 250 in total so far.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68705913",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/4F8D/production/_133056302_hacking.jpg",
+        "publishedAt": "2024-04-01T07:05:05Z",
+        "content": "The Indian government has said that it has rescued 250 citizens in Cambodia who were forced to run online scams.\r\nSeventy-five people were rescued in the past three months while the timeline for the … [+2131 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "India opposition MP arrested over corruption claims",
+        "description": "His party has accused the ruling Bharatiya Janata Party of playing \"dirty politics\" in the case.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68630659",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/152E6/production/_132985768_mediaitem132985764.jpg",
+        "publishedAt": "2024-03-21T17:58:44Z",
+        "content": "Prominent opposition politician and Delhi chief minister Arvind Kejriwal has been arrested by India's financial crime agency, his party said.\r\nThe arrest is in connection with corruption allegations … [+1928 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Hackaday"
+        },
+        "author": "Dave Rowntree",
+        "title": "2024 Home Sweet Home Automation: [HEX]POD – Climate Tracker and Digital Nose",
+        "description": "[eBender] was travelling India with friends, when one got sick. Unable to find a thermometer anywhere during COVID, they finally ended up in a hospital. After being evacuated back home, [eBender] h…",
+        "url": "https://hackaday.com/2024/03/27/2024-home-sweet-home-automation-hexpod-climate-tracker-and-digital-nose/",
+        "urlToImage": "https://hackaday.com/wp-content/uploads/2024/03/3962391701725633826-featured.png",
+        "publishedAt": "2024-03-27T18:30:41Z",
+        "content": "[eBender] was travelling India with friends, when one got sick. Unable to find a thermometer anywhere during COVID, they finally ended up in a hospital. After being evacuated back home, [eBender] hat… [+1784 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": null,
+        "title": "Anderson becomes first pace bowler to 700 Test wickets",
+        "description": "England's James Anderson has become the first fast bowler to take 700 Test wickets after dismissing India's Kuldeep Yadav in the fifth Test.",
+        "url": "https://www.bbc.co.uk/sport/cricket/68217903",
+        "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/D037/production/_132630335_james_anderson_700story.jpg",
+        "publishedAt": "2024-03-09T04:16:50Z",
+        "content": "England's James Anderson has become the first pace bowler to take 700 Test wickets. \r\nThe 41-year-old reached the landmark by dismissing India's Kuldeep Yadav on day three of the fifth Test in Dharam… [+2119 chars]"
+        },
+        {
+        "source": {
+        "id": "time",
+        "name": "Time"
+        },
+        "author": "Associated Press",
+        "title": "India Announces 6-Week General Elections Starting April 19, Modi’s BJP Tops Surveys",
+        "description": "India on Saturday announced its 6-week-long general elections will start on April 19. Voting will stretch over seven phases.",
+        "url": "https://time.com/6957662/india-general-elections-april-modi-bjp/",
+        "urlToImage": "https://api.time.com/wp-content/uploads/2024/03/AP24076374340595.jpg?quality=85",
+        "publishedAt": "2024-03-16T14:38:49Z",
+        "content": "NEW DELHI India on Saturday announced its 6-week-long general elections will start on April 19, with most surveys predicting a victory for Prime Minister Narendra Modi and his Hindu nationalist Bhara… [+2670 chars]"
+        },
+        {
+        "source": {
+        "id": "time",
+        "name": "Time"
+        },
+        "author": "Astha Rajvanshi",
+        "title": "Why India’s Political Opposition is So Weak",
+        "description": "More than two dozen opposition parties in India have banded together—but the fractured alliance can't seem to pose a real challenge.",
+        "url": "https://time.com/6962684/india-election-2024-opposition-party/",
+        "urlToImage": "https://api.time.com/wp-content/uploads/2024/04/AP24091453637920.jpg?quality=85",
+        "publishedAt": "2024-04-02T18:27:39Z",
+        "content": "When more than two dozen opposition parties in India announced they would band together as the Indian National Developmental Inclusive Alliance (or INDIA) last June, critics of the ruling Bharatiya J… [+8297 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "tips@androidcentral.com (Nickolas Diaz)",
+        "title": "Nothing Phone 3 rumored to feature Qualcomm's latest flagship variant",
+        "description": "A rumor suggested the Nothing Phone 3 could see a flagship Qualcomm chip variant and a possible price hike.",
+        "url": "https://www.androidcentral.com/phones/nothing-phone-3-qualcomm-chip-price-rumors",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/F7utDYfLZ9XYPhH5hbyT3A-1200-80.jpg",
+        "publishedAt": "2024-04-01T19:13:51Z",
+        "content": "What you need to know\r\n<ul><li>Early rumors suggest Nothing's Phone 3 will feature Qualcomm's toned-down Snapdragon 8s Gen 3 SoC.</li><li>The chip launched in March and clocked at 3.0GHz with a singu… [+2593 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+        "title": "The OnePlus Ace 3V design revealed ahead of this week's launch",
+        "description": "OnePlus is gearing up for two smartphone launches — the Ace 3V this week and the OnePlus Nord CE 4 next month.",
+        "url": "https://www.androidcentral.com/phones/oneplus-ace-3v-design-revealed",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/PWoqrxYvvdFxHWucP4NEeW-1200-80.jpg",
+        "publishedAt": "2024-03-19T03:26:46Z",
+        "content": "What you need to know\r\n<ul><li>OnePlus is launching a new mid-range phone in China this week.</li><li>It is dubbed the OnePlus Ace 3V and is likely to be rebranded as the OnePlus Nord 4 outside of Ch… [+1987 chars]"
+        },
+        {
+        "source": {
+        "id": "wired",
+        "name": "Wired"
+        },
+        "author": "Vittoria Elliott",
+        "title": "The House Passed the Bill That Could Ban TikTok—and It Wasn't Close",
+        "description": "If the Senate passes the bill, President Joe Biden has said he would sign it.",
+        "url": "https://www.wired.com/story/congress-tiktok-ban/",
+        "urlToImage": "https://media.wired.com/photos/65f1c5556d1c818fc4449530/191:100/w_1280,c_limit/House-Bans-TikTok-GettyImages-2081195969.jpg",
+        "publishedAt": "2024-03-13T15:34:04Z",
+        "content": "This morning, the US House of Representatives voted to essentially ban TikTok, unless Chinese-owned Bytedance divests from the app entirely. If passed in the Senate, TikTok would have about 6 months … [+4094 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Design-milk.com"
+        },
+        "author": "Vy Yang",
+        "title": "Christopher Farr Merges Illustration With Textiles for The Elder Statesman",
+        "description": "Designed in collaboration with Christopher Farr, The Elder Statesman founder, Greg Chait, reimagines his grandmother's illustrations in a new rug collection.",
+        "url": "https://design-milk.com/christopher-farr-merges-illustration-with-textiles-for-the-elder-statesman/",
+        "urlToImage": "https://design-milk.com/images/2024/03/the-elder-statesman-christopher-farr-rugs-7.jpg",
+        "publishedAt": "2024-03-11T14:00:50Z",
+        "content": "During this years Frieze LA design festival, Los Angeles-based luxury lifestyle brand The Elder Statesman launched a new collection that once again pays homage to founder Greg Chaits grandmother, The… [+1669 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "US urges fair legal process for India opposition leader",
+        "description": "Washington reiterated its remark hours after Delhi summoned a US diplomat over similar comments.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68681612",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/79C4/production/_133027113_gettyimages-2031349169.jpg",
+        "publishedAt": "2024-03-28T06:13:46Z",
+        "content": "The US has reiterated that it encourages a \"transparent\" legal process in a corruption case against Delhi Chief Minister Arvind Kejriwal.\r\nState Department spokesperson Mathew Miller said on Wednesda… [+3035 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Top India airline to cut flights amid crew protests",
+        "description": "Vistara has seen massive disruption in its services amid reports of pilots going on mass sick leave.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68729578",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/13463/production/_133074987_gettyimages-1259154664-594x594.jpg",
+        "publishedAt": "2024-04-04T06:51:36Z",
+        "content": "A major Indian airline is scaling back operations this month amid widespread flight cancellations and delays due to unavailability of its pilots.\r\nSince 31 March, Vistara has seen nearly 150 flight c… [+2107 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Xataka.com"
+        },
+        "author": "Alejandro Alcolea",
+        "title": "En plena calma tensa en Asia, un viejo enemigo de China acaba de sacar a pasear sus nuevos portaaviones: India",
+        "description": "El océano Índico tiene una importancia vital para los países colindantes, pero para India y China, el control de estas aguas se ha convertido en un asunto de máxima importancia. Y no es para menos, ya que es clave para afianzar la estrategia de control geopol…",
+        "url": "https://www.xataka.com/transporte/plena-calma-tensa-asia-viejo-enemigo-china-acaba-sacar-a-pasear-sus-nuevos-portaaviones-india",
+        "urlToImage": "https://i.blogs.es/df518e/captura-de-pantalla-2024-03-13-a-las-15.23.03/840_560.jpeg",
+        "publishedAt": "2024-03-17T14:00:46Z",
+        "content": "El océano Índico tiene una importancia vital para los países colindantes, pero para India y China, el control de estas aguas se ha convertido en un asunto de máxima importancia. Y no es para menos, y… [+4407 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Xataka.com"
+        },
+        "author": "Ricardo Aguilar",
+        "title": "Amazon quería tiendas 100% automatizadas. Acabó con 1.000 trabajadores en la India vigilando cada compra",
+        "description": "En 2016 Amazon lanzaba 'Just Walk Out', su plan para eliminar los cajeros de las tiendas. El plan era fácil de explicar, pero difícil de ejecutar: tiendas repletas de sensores y cámaras para detectar qué compraba cada cliente y evitar así el personal humano. …",
+        "url": "https://www.xataka.com/empresas-y-economia/amazon-queria-tiendas-100-automatizadas-acabo-1-000-trabajadores-india-vigilando-cada-compra",
+        "urlToImage": "https://i.blogs.es/e58ec4/comprar/840_560.jpeg",
+        "publishedAt": "2024-04-03T08:30:48Z",
+        "content": "En 2016 Amazon lanzaba 'Just Walk Out', su plan para eliminar los cajeros de las tiendas. El plan era fácil de explicar, pero difícil de ejecutar: tiendas repletas de sensores y cámaras para detectar… [+3701 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "NPR"
+        },
+        "author": "Omkar Khandekar",
+        "title": "Indian judge says billion-dollar ayurvedic company has taken the public 'for a ride'",
+        "description": "The country's supreme court has temporarily banned Patanjali, a leading maker of ayurvedic products with ties to the prime minister, from advertising certain items due to a history of false claims.",
+        "url": "https://www.npr.org/sections/goatsandsoda/2024/03/14/1236533011/ayurvedic-india-banned-advertising-some-products",
+        "urlToImage": "https://media.npr.org/assets/img/2024/03/12/01_2023-06-16t100516z_1966443998_mt1asnews20230616023l_rtrmadp_3_ani_wide-f011a553c8b56fa42ef8839564913033729478a5-s1400-c100.jpg",
+        "publishedAt": "2024-03-14T11:05:12Z",
+        "content": "Yoga guru Baba Ramdev, the brand ambassador for the billion dollar company Patanjali Ayurved, addresses the media during a launch of \"premium products\" in New Delhi.\r\nRahul Singh/ANI via Reuters Conn… [+7712 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Slashdot.org"
+        },
+        "author": "BeauHD",
+        "title": "Public Trust In AI Is Sinking Across the Board",
+        "description": "Trust in AI technology and the companies that develop it is dropping, in both the U.S. and around the world, according to new data from Edelman shared first with Axios. Axios reports: Globally, trust in AI companies has dropped to 53%, down from 61% five year…",
+        "url": "https://tech.slashdot.org/story/24/03/06/2116226/public-trust-in-ai-is-sinking-across-the-board",
+        "urlToImage": "https://a.fsdn.com/sd/topics/ai_64.png",
+        "publishedAt": "2024-03-06T23:40:00Z",
+        "content": "Globally, trust in AI companies has dropped to 53%, down from 61% five years ago. In the U.S., trust has dropped 15 percentage points (from 50% to 35%) over the same period. Trust in AI is low across… [+722 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Filip De Mott",
+        "title": "China is on pace to buy a record amount of Russian oil this month",
+        "description": "China is expected to import 1.7 million barrels of Russian crude a day, taking over Indian demand, Kpler data cited by Bloomberg shows.",
+        "url": "https://markets.businessinsider.com/news/commodities/china-russia-economy-record-trade-crude-oil-india-demand-sanctions-2024-3",
+        "urlToImage": "https://i.insider.com/6549429936d588dc55cba5e9?width=1200&format=jpeg",
+        "publishedAt": "2024-03-18T17:30:06Z",
+        "content": "Crude oil tankerGetty Images\r\n<ul>\n<li>China's intake of Russian crude is set to reach a record this month, Kpler data cited by Bloomberg shows.</li>\n<li>Imports of Sokol crude are on course to jump … [+2415 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Joshua Zitser",
+        "title": "Google says it will restrict Gemini's ability to answer election-related questions 'out of an abundance of caution'",
+        "description": "Google will restrict AI chatbot Gemini from responding to election-related queries, weeks after pulling its ability to generate images of people.",
+        "url": "https://www.businessinsider.com/google-restricts-gemini-ai-chatbot-answering-election-questions-trump-biden-2024-3",
+        "urlToImage": "https://i.insider.com/65f1861a90413ab8e1dc01ef?width=1200&format=jpeg",
+        "publishedAt": "2024-03-13T11:25:00Z",
+        "content": "In this photo illustration, the logo of 'Google' is displayed on a phone screen in front of a 'Google Gemini' logo.AnadoluBetul Abali/Getty Images\r\n<ul><li>Google will restrict its AI chatbot Gemini … [+2669 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "NPR"
+        },
+        "author": "Kamala Thiagarajan",
+        "title": "Q&A: Yashica Dutt on her life as part of an oppressed caste in 'Coming Out As Dalit'",
+        "description": "When Dutt was a kid, her family pretended to be rich so no one would suspect their caste identity. In her memoir, she talks of her struggles — and her decision to publicly declare she is a Dalit.",
+        "url": "https://www.npr.org/sections/goatsandsoda/2024/03/10/1237079092/q-a-yashica-dutt-on-her-life-as-part-of-an-oppressed-caste-in-coming-out-as-dali",
+        "urlToImage": "https://media.npr.org/assets/img/2024/03/08/01_comingoutasdalit_wide-895b0b9b0fd08fe9790e4b32370b877a59832e64-s1400-c100.jpg",
+        "publishedAt": "2024-03-10T12:43:43Z",
+        "content": "As a young girl growing up in Ajmer, a small town in the Western Indian state of Rajasthan, journalist and author, Yashica Dutt, 38, says that she was painfully aware of the many sacrifices her mothe… [+7709 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "The maverick leader who took on India's Modi",
+        "description": "Mr Kejriwal's arrest contrasts his anti-corruption campaign that took India by storm in 2011.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68271366",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/10CB4/production/_132988786_mediaitem132988785.jpg",
+        "publishedAt": "2024-03-22T06:36:02Z",
+        "content": "When Delhi Chief Minister Arvind Kejriwal was arrested on Thursday on claims of corruption, it came as no surprise.\r\nMonths earlier, in November, Mr Kejriwal's Aam Aadmi Party (AAP) had run a door to… [+5305 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Tattle.co.in"
+        },
+        "author": null,
+        "title": "Securing Your Codebase",
+        "description": "We build tools and datasets to understand and respond to misinformation in India.",
+        "url": "https://tattle.co.in/blog/2024-04-03-securing-feluda-pt1/",
+        "urlToImage": "https://tattle.co.in/static/bb58f653a64a4d4f4795ba34be781f0b/social-card-blog.png",
+        "publishedAt": "2024-04-04T05:36:46Z",
+        "content": "Published on Tue Apr 02 2024Aurora - Feluda\r\nWe have recently made numerous improvements to Feluda, following a security-first approach to allow long-term maintenance and active contributions. These … [+11049 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "MacRumors"
+        },
+        "author": "Joe Rossignol",
+        "title": "Lower-Cost AirPods Rumored to Launch Later This Year",
+        "description": "Apple plans to release lower-cost AirPods later this year, according to Jeff Pu, an analyst who covers companies within Apple's supply chain.\n\n\n\n\n\nIn a research today with investment firm Haitong International Securities, Pu said the lower-cost AirPods will b…",
+        "url": "https://www.macrumors.com/2024/04/01/lower-cost-airpods-late-2024-rumor/",
+        "urlToImage": "https://images.macrumors.com/t/qEYhkC0wur0lTbK87eogXgkEW-Y=/2500x/article-new/2023/04/airpods-3-orange.jpg",
+        "publishedAt": "2024-04-02T00:21:08Z",
+        "content": "Apple plans to release lower-cost AirPods later this year, according to Jeff Pu, an analyst who covers companies within Apple's supply chain.\r\nIn a research today with investment firm Haitong Interna… [+1103 chars]"
+        },
+        {
+        "source": {
+        "id": "time",
+        "name": "Time"
+        },
+        "author": "Sunita Viswanath",
+        "title": "The Hindu Leaders Fighting Hindu Nationalism",
+        "description": "The religion has a long and rich history of inclusion that must be reclaimed to fight India's ruling BJP.",
+        "url": "https://time.com/6958798/hindu-leaders-fighting-hindu-supremacism/",
+        "urlToImage": "https://api.time.com/wp-content/uploads/2024/03/hindu-nationalism-modi.jpg?quality=85",
+        "publishedAt": "2024-03-21T08:30:00Z",
+        "content": "As India hurtles toward the worlds largestelections next month, I mourn for the democracy of my homeland that once was. The press is increasingly muzzled, dissent is met with incarceration, and a pal… [+4719 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "ReadWrite"
+        },
+        "author": "James Jones",
+        "title": "Motorola Edge 50 Pro: release date, specs, price and everything we know",
+        "description": "Motorola is preparing to announce its latest flagship phone, with the Edge 50 Pro due to be revealed to the… Continue reading Motorola Edge 50 Pro: release date, specs, price and everything we know\nThe post Motorola Edge 50 Pro: release date, specs, price and…",
+        "url": "https://readwrite.com/motorola-edge-50-pro-release-date-specs-price-and-everything-we-know/",
+        "urlToImage": "https://readwrite.com/wp-content/uploads/2024/04/s2D6x44yWdhzwp9K3E6KVP-650-80.jpg.webp",
+        "publishedAt": "2024-04-02T10:13:37Z",
+        "content": "Motorola is preparing to announce its latest flagship phone, with the Edge 50 Pro due to be revealed to the public in the first week of April 2024.\r\nIt is widely expected that improved AI features wi… [+5295 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "ReadWrite"
+        },
+        "author": "Graeme Hanna",
+        "title": "AI skills acting as catalyst for higher salaries",
+        "description": "A survey has found employees are willing to pay 44% more for workers skilled in artificial intelligence (AI) for the… Continue reading AI skills acting as catalyst for higher salaries\nThe post AI skills acting as catalyst for higher salaries appeared first on…",
+        "url": "https://readwrite.com/ai-skills-acting-as-catalyst-for-higher-salaries/",
+        "urlToImage": "https://readwrite.com/wp-content/uploads/2024/03/tupZlMx2RDCoVEFwpBuj0Q.png",
+        "publishedAt": "2024-03-08T17:56:03Z",
+        "content": "A survey has found employees are willing to pay 44% more for workers skilled in artificial intelligence (AI) for the IT sector and 41% more for staff working in research and development.\r\nThe study w… [+2189 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Delhi world's 'most polluted' capital city: report",
+        "description": "India, of which Delhi is the capital, was also ranked as the third-most polluted country in the world.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68613502",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1236F/production/_132970647_gettyimages-1855948107.jpg",
+        "publishedAt": "2024-03-20T09:35:11Z",
+        "content": "Delhi was the most polluted capital city in the world in 2023, a Swiss-based air-quality monitoring group has found.\r\nIndia, of which Delhi is the capital, was also ranked as the world's third-most p… [+2023 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Extreme heat can double stillbirth risk - study",
+        "description": "Women in India are found to be twice as likely to lose babies if they are working in hot conditions.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68575943",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8D7F/production/_132932263_2-sumathydownthebarrel.jpg",
+        "publishedAt": "2024-03-21T00:16:53Z",
+        "content": "Working in extreme heat can double the risk of stillbirth and miscarriage for pregnant women, according to new research from India. \r\nThe study found that the risks to mothers-to-be are significantly… [+9928 chars]"
+        },
+        {
+        "source": {
+        "id": "time",
+        "name": "Time"
+        },
+        "author": "Astha Rajvanshi",
+        "title": "Why India’s Next Election Will Last 44 Days",
+        "description": "Nearly 970 million Indians could head to the polls between April 19 and June 1, with results expected June 4. Here's why it takes so long.",
+        "url": "https://time.com/6958093/india-elections-2024-phases-long/",
+        "urlToImage": "https://api.time.com/wp-content/uploads/2024/03/AP24078276669050.jpg?quality=85",
+        "publishedAt": "2024-03-18T17:59:13Z",
+        "content": "India, the worlds most populous democracy, is set to hold its next general election over a seven-phase period that will last 44 days. On March 16, the Indian Election Commission announced that Indian… [+4687 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Hipertextual"
+        },
+        "author": "Gabriel Erard",
+        "title": "China usará IA para interferir en las elecciones de EE. UU. y otros países, advierte Microsoft",
+        "description": "China planea usar inteligencia artificial (IA) para interferir en las elecciones de Estados Unidos, India y Corea del Sur, advirtió Microsoft. En un nuevo informe elaborado por su Centro de Análisis de Amenazas, los de Redmond alertaron por el incremento de l…",
+        "url": "http://hipertextual.com/2024/04/china-ia-interferir-elecciones-estados-unidos",
+        "urlToImage": "https://imgs.hipertextual.com/wp-content/uploads/2023/04/china-regula-ia-generativa-scaled.jpg",
+        "publishedAt": "2024-04-05T13:24:30Z",
+        "content": "China planea usar inteligencia artificial (IA) para interferir en las elecciones de Estados Unidos, India y Corea del Sur, advirtió Microsoft. En un nuevo informe elaborado por su Centro de Análisis … [+3642 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Xataka.com"
+        },
+        "author": "Carlos Prego",
+        "title": "Recorrer 1.800 kilómetros en un tren bala bajo el mar: la alucinante propuesta del túnel submarino Emiratos-India",
+        "description": "Cuando de megaestructuras se trata a Emiratos Árabes Unidos no le tiembla el pulso. Ahí están para demostrarlo el Burj Khalifa, el mayor rascacielos del planeta, o proyectos como el resort en forma de Luna de Dubái u One Za´abeel, dotado del mayor edificio en…",
+        "url": "https://www.xataka.com/ingenieria-y-megaconstrucciones/recorrer-1-800-kilometros-en-un-tren-bala-bajo-el-mar-la-alucinante-propuesta-del-tunel-submarino-emiratos-india",
+        "urlToImage": "https://i.blogs.es/8f5e5e/tunel3/840_560.jpeg",
+        "publishedAt": "2024-03-12T18:15:22Z",
+        "content": "Cuando de megaestructuras se trata a Emiratos Árabes Unidos no le tiembla el pulso. Ahí están para demostrarlo el Burj Khalifa, el mayor rascacielos del planeta, o proyectos como el resort en forma d… [+5012 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Slashdot.org"
+        },
+        "author": "msmash",
+        "title": "Only 57 Companies Produced 80% of Global Carbon Dioxide",
+        "description": "Last year was the hottest on record and the Earth is headed towards a global warming of 2.7 degrees, yet top fossil fuel and cement producers show a disregard for climate change and actively make things worse. From a report: A new Carbon Majors Database repor…",
+        "url": "https://news.slashdot.org/story/24/04/04/141214/only-57-companies-produced-80-of-global-carbon-dioxide",
+        "urlToImage": "https://a.fsdn.com/sd/topics/earth_64.png",
+        "publishedAt": "2024-04-04T14:01:00Z",
+        "content": "A new Carbon Majors Database report found that just 57 companies were responsible for 80 percent of the global carbon dioxide emissions between 2016 and 2022. Thirty-eight percent of total emissions … [+1071 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Xataka.com"
+        },
+        "author": "Javier Marquez",
+        "title": "Esta ciudad india tiene un enorme problema de tráfico. Y cree tener la clave para abordarlo: inteligencia artificial",
+        "description": "Bangalore supo ser un auténtico paraíso natural, pero con el paso del tiempo acabó convirtiéndose en un polo tecnológico calificado por muchos como “el Silicon Valley de la India”. En esta metrópoli destacan los edificios enormes, las mansiones de los millona…",
+        "url": "https://www.xataka.com/robotica-e-ia/esta-ciudad-india-tiene-enorme-problema-trafico-cree-tener-clave-para-abordarlo-inteligencia-artificial",
+        "urlToImage": "https://i.blogs.es/2830c5/india-trafico-portada/840_560.jpeg",
+        "publishedAt": "2024-03-26T23:48:28Z",
+        "content": "Bangalore supo ser un auténtico paraíso natural, pero con el paso del tiempo acabó convirtiéndose en un polo tecnológico calificado por muchos como el Silicon Valley de la India. En esta metrópoli de… [+3117 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Charissa Cheong",
+        "title": "We moved to Finland and aren't sure it's the 'happiest country in the world' — but we have no regrets",
+        "description": "Finland isn't always 'the happiest country in the world' for expats, an immigrant couple says. But it's still a great place to live and raise kids.",
+        "url": "https://www.businessinsider.com/finland-happiest-country-in-the-world-immigrants-2024-3",
+        "urlToImage": "https://i.insider.com/65e85ff290413ab8e1d99c87?width=1200&format=jpeg",
+        "publishedAt": "2024-03-07T10:16:07Z",
+        "content": "Kristaps Kovalonoks and Megha Goswami met in Finland in 2019 and got married in August 2023.Courtesy of Barbara Kaucher.\r\n<ul><li>Kristaps Kovalonoks and Megha Goswami met in Finland after they both … [+5759 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "AppleInsider"
+        },
+        "author": "news@appleinsider.com (William Gallagher)",
+        "title": "Apple won't unlock India Prime Minister's election opponent's iPhone",
+        "description": "India's Enforcement Directorate has jailed Delhi's Chief Minister Arvind Kejriwal ahead of elections, and wants proof of alleged bribery it says is locked in his iPhone.Indian election rival Arvind Kejriwal has refused to unlock his iPhone after his arrestKej…",
+        "url": "https://appleinsider.com/articles/24/04/01/apple-wont-unlock-india-prime-ministers-election-opponents-iphone",
+        "urlToImage": "https://photos5.appleinsider.com/gallery/59153-120741-000-lede-passcode-xl.jpg",
+        "publishedAt": "2024-04-01T11:03:06Z",
+        "content": "Indian election rival Arvind Kejriwal has refused to unlock his iPhone after his arrest\r\nIndia's Enforcement Directorate has jailed Delhi's Chief Minister Arvind Kejriwal ahead of elections, and want… [+2031 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Hipertextual"
+        },
+        "author": "Rubén Chicharro",
+        "title": "Los Realme 12 Pro y 12 Pro+ llegan a España con una oferta de lanzamiento muy atractiva",
+        "description": "Después de su lanzamiento en la India, la compañía china ha anunciado globalmente los Realme 12 Pro y 12 Pro+, que llegan para intentar hacerse un hueco en la gama media apostándolo todo en el diseño y la pantalla con un precio de salida de 399 euros. Realme …",
+        "url": "http://hipertextual.com/2024/03/los-realme-12-pro-y-12-pro-llegan-a-espana-con-un-atractivo-descuento",
+        "urlToImage": "https://imgs.hipertextual.com/wp-content/uploads/2024/01/realme-12-pro-001.jpg",
+        "publishedAt": "2024-03-14T11:00:15Z",
+        "content": "Después de su lanzamiento en la India, la compañía china ha anunciado globalmente los Realme 12 Pro y 12 Pro+, que llegan para intentar hacerse un hueco en la gama media apostándolo todo en el diseño… [+2704 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Asteriskmag.com"
+        },
+        "author": null,
+        "title": "The Ruin of Mumbai–Asterisk",
+        "description": "Mumbai’s land use regulations are designed to keep population density low. Instead, they force Mumbaikars into slums, while all of India pays the price.",
+        "url": "https://asteriskmag.com/issues/05/the-ruin-of-mumbai",
+        "urlToImage": "https://asteriskmag.com/media/pages/issues/05/the-ruin-of-mumbai/ba7c8bbae3-1709578900/screenshot-2024-03-04-at-11-01-28am-1200x630-crop.png",
+        "publishedAt": "2024-03-08T10:56:30Z",
+        "content": "A few years ago, following a peculiar series of events involving a family friend and an international political incident, I found myself living in a two-room apartment in Mumbai at a rate steeply bel… [+17529 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "nandika.iyerravi@futurenet.com (Nandika Ravi)",
+        "title": "Ten years later, OnePlus is still trying to find its footing in the US",
+        "description": "A look into One Plus' strategy in the U.S. and what the brand's future looks like.",
+        "url": "https://www.androidcentral.com/phones/oneplus-north-american-strategy-ten-years-later",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/2KjH7Z9nyS6grAqUerD2fD-1200-80.jpg",
+        "publishedAt": "2024-04-01T17:05:22Z",
+        "content": "OnePlus is a major player in the Indian smartphone market, offering a wide range of devices, from flagships to midrange phones like the new Nord CE 4. However, the picture across North America looks … [+7281 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+        },
+        "author": "Reuters",
+        "title": "In big win for Tesla, India to lower EV import tax if $500 million invested",
+        "description": "Filed under:\n Green,Tesla,Electric\n Continue reading In big win for Tesla, India to lower EV import tax if $500 million invested\nIn big win for Tesla, India to lower EV import tax if $500 million invested originally appeared on Autoblog on Sat, 16 Mar 2024 07…",
+        "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_4e8c80c2-7d11-42f6-b0aa-5c8c5d7c3959",
+        "urlToImage": null,
+        "publishedAt": "2024-03-16T11:00:00Z",
+        "content": "Si vous cliquez sur « Tout accepter », nos partenaires (y compris 241 qui font partie du Cadre de transparence et de consentement dIAB) et nous utiliserons également des témoins et vos données person… [+982 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "heise online"
+        },
+        "author": "Pratima Harigunani",
+        "title": "Missing Link: India's Software Brain Drain Turns the Tide to Talent Shortage",
+        "description": "From India’s own digital rise to new visa dynamics to a huge demand for talent by Big Tech – there are many levers pulling IT professionals back to India.",
+        "url": "https://www.heise.de/hintergrund/Missing-Link-India-s-Software-Brain-Drain-Turns-the-Tide-to-Talent-Shortage-9639695.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+        "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/4/8/3/5/7/shutterstock_2288178675-0d8fbb8d299a1a9f.jpg",
+        "publishedAt": "2024-03-17T07:04:00Z",
+        "content": "Inhaltsverzeichnis\r\nNote: Dieser Artikel ist auch auf Deutsch verfügbar.\r\nIf you drive to Hyderabad, once a nondescript city in India only popular for its palaces and biryani, now an IT metropolis, a… [+9627 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "heise online"
+        },
+        "author": "Pratima Harigunani",
+        "title": "Missing Link: India's Software Brain Drain Turns the Tide to Talent Shortage",
+        "description": "From India’s own digital rise to new visa dynamics to a huge demand for talent by Big Tech – there are many levers pulling IT professionals back to India.",
+        "url": "https://www.heise.de/hintergrund/Missing-Link-India-s-Software-Brain-Drain-Turns-the-Tide-to-Talent-Shortage-9658730.html?wt_mc=rss.red.ho.ho.atom.beitrag.beitrag",
+        "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/5/8/6/4/8/shutterstock_2288178675-0d8fbb8d299a1a9f.jpg",
+        "publishedAt": "2024-03-24T07:05:00Z",
+        "content": "Inhaltsverzeichnis\r\nNote: Dieser Artikel ist auch auf Deutsch verfügbar.\r\nIf you drive to Hyderabad, once a nondescript city in India only popular for its palaces and biryani, now an IT metropolis, a… [+9902 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Indian troops to exit Maldives as China gains foothold",
+        "description": "Maldives President Mohamed Muizzu, seen as pro-China, had asked Delhi to withdraw troops from his country.",
+        "url": "https://www.bbc.co.uk/news/world-asia-india-68498232",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E2DB/production/_132857085_gettyimages-2000245092.jpg",
+        "publishedAt": "2024-03-08T01:48:17Z",
+        "content": "India is set to pull its first batch of military personnel from the Maldives on Sunday as the island nation moves closer to China.\r\nThe phased withdrawal of about 80 Indian troops must meet a May dea… [+5826 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Xataka.com"
+        },
+        "author": "Javier Marquez",
+        "title": "Un millonario indio mandó a construir una mansión en la cima de un rascacielos: es una réplica de la Casa Blanca",
+        "description": "Sabemos que las mansiones suelen ser un capricho común entre los millonarios, pero no todos tienen los mismos gustos. El empresario estadounidense Ken Griffin, por ejemplo, no duda en gastar cientos de millones de dólares en construir la casa de sus sueños fr…",
+        "url": "https://www.xataka.com/magnet/millonario-indio-mando-a-construir-su-propia-casa-blanca-cima-rascacielos-quizas-que-nunca-pueda-vivir-alli",
+        "urlToImage": "https://i.blogs.es/cc536e/vijay-mallya-kingfisher-towers-portada/840_560.jpeg",
+        "publishedAt": "2024-03-25T21:31:48Z",
+        "content": "Sabemos que las mansiones suelen ser un capricho común entre los millonarios, pero no todos tienen los mismos gustos. El empresario estadounidense Ken Griffin, por ejemplo, no duda en gastar cientos … [+2343 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Police"
+        },
+        "author": "Chris Thomas",
+        "title": "OnePlus quietly pulls advertised features from the 12 and 12R, upsetting fans",
+        "description": "Dual SIM dual active, eSIM support in India, and UFS 4.0 miscues: OnePlus might want to tighten up its feature marketing to keep fans happy",
+        "url": "https://www.androidpolice.com/oneplus-sends-wrong-signals-repeated-spec-sheet-mistakes/",
+        "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/08/oneplus-10t-logo-macro-2-B.jpg",
+        "publishedAt": "2024-03-29T11:00:12Z",
+        "content": "When you buy a phone, you expect it to have all the advertised features. Some selling points, like constantly evolving AI toolkits, might take time to implement. Others, like dual SIM card support or… [+6227 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "NPR"
+        },
+        "author": "Lauren Frayer",
+        "title": "Ireland's prime minister, Leo Varadkar, has resigned",
+        "description": "Leo Varadkar announced he will step down as taoiseach, or prime minister, within weeks as soon as his Fine Gael party chooses a successor.",
+        "url": "https://www.npr.org/2024/03/20/1239622769/ireland-prime-minister-leo-varadkar-resigns",
+        "urlToImage": "https://media.npr.org/assets/img/2024/03/20/gettyimages-1977311958_wide-8cee9555df0085b05c164ad79cf0806226e0e58f-s1400-c100.jpg",
+        "publishedAt": "2024-03-20T13:33:49Z",
+        "content": "Prime Minister of Ireland Leo Varadkar arrives to attend a European Union summit on Feb. 1 in Brussels, Belgium.\r\nPier Marco Tacca/Getty Images\r\nLONDON Ireland's prime minister, Leo Varadkar, has ann… [+1499 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "ReadWrite"
+        },
+        "author": "Suswati Basu",
+        "title": "Here’s a list of countries that have a TikTok ban and why",
+        "description": "TikTok has encountered a barrage of bans, and the U.S. is close to joining the list. Discussions of a ban… Continue reading Here’s a list of countries that have a TikTok ban and why\nThe post Here’s a list of countries that have a TikTok ban and why appeared f…",
+        "url": "https://readwrite.com/heres-a-list-of-countries-have-a-tiktok-ban-and-why/",
+        "urlToImage": "https://readwrite.com/wp-content/uploads/2024/04/Heres-a-list-of-countries-have-a-TikTok-ban-and-why.png",
+        "publishedAt": "2024-04-04T19:01:23Z",
+        "content": "TikTok has encountered a barrage of bans, and the U.S. is close to joining the list. Discussions of a ban started last year, gaining attention, especially after a high-profile congressional hearing f… [+11243 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "VentureBeat"
+        },
+        "author": "Dean Takahashi",
+        "title": "Hunch raises $23M for new-age social discovery app",
+        "description": "Hunch, a new social discovery app, has raised $23 Million to fuel its global expansion.",
+        "url": "https://venturebeat.com/games/hunch-raises-23m-for-new-age-social-discovery-app/",
+        "urlToImage": "?w=1200&strip=all",
+        "publishedAt": "2024-03-06T16:00:00Z",
+        "content": "Are you looking to showcase your brand in front of the gaming industrys top leaders? Learn more about GamesBeat Summit sponsorship opportunities here. \r\nHunch, a new social discovery app, has raised … [+1116 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "tips@androidcentral.com (Nickolas Diaz)",
+        "title": "Galaxy Buds 2 Pro update brings 'Auto Switch' and teases more Auracast",
+        "description": "Samsung started rolling out a new update for its Galaxy Buds 2 Pro, though it's still missing the promised Galaxy AI features.",
+        "url": "https://www.androidcentral.com/accessories/earbuds/galaxy-buds-2-pro-auto-switch-auracast-update",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/sC6mumTPFrXVfkxAoYGKsg-1200-80.jpg",
+        "publishedAt": "2024-03-06T19:18:24Z",
+        "content": "<ul><li>Samsung's Galaxy Buds 2 Pro is beginning to receive a new update that brings \"Auto Switch\" to the device, capable of working with phones, tablets, and Galaxy Books.</li><li>The update also se… [+2139 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+        "title": "Snapdragon 7 Gen 3 powered OnePlus Nord CE4 gets a launch date of April 1",
+        "description": "After seeing Vivo V30 with Snapdragon 7 Gen 3, we might see a second device with the same SoC from OnePlus.",
+        "url": "https://www.androidcentral.com/phones/oneplus-nord-ce-4-to-launch-on-april-1-2024",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/uZ2wNCYW3aztae36XTarGB-1200-80.jpg",
+        "publishedAt": "2024-03-11T21:01:22Z",
+        "content": "<ul><li>OnePlus has a new mid-range smartphone up its sleeve for April 1, 2024.</li><li>Dubbed OnePlus Nord CE4, it will be powered by Snapdragon 7 Gen 3.</li><li>It will be available in two colorway… [+2144 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+        "title": "OnePlus 12R receives a new update with stability improvements and more",
+        "description": "After putting an end to the UFS 4.0 controversy, OnePlus is rolling out one of the first OxygenOS 14 updates to the OnePlus 12R.",
+        "url": "https://www.androidcentral.com/apps-software/oneplus-12r-first-oxygenos-14-security-update",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/8cuz3GmxjpJBbsD84fkgrS-1200-80.jpg",
+        "publishedAt": "2024-03-12T16:08:58Z",
+        "content": "<ul><li>The OnePlus 12R is getting an OxygenOS 14.0.0.500 update with a February 2024 security patch.</li><li>It also includes several system-wide improvements and fixes.</li><li>The latest firmware … [+2133 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+        "title": "Nothing Phone 2a gets its first update, boosting performance",
+        "description": "After launching the Phone 2a early this month, Nothing has already started rolling out its first update.",
+        "url": "https://www.androidcentral.com/apps-software/nothing-phone-2a-gets-its-first-update",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/NQcxEdeKTAsnEjv7Wsr2fK-1200-80.jpg",
+        "publishedAt": "2024-03-12T20:31:54Z",
+        "content": "<ul><li>Nothing Phone 2a receives its first update after its launch on March 5.</li><li>The update introduces new widgets, cameras, and performance improvements to the company's first budget phone.</… [+2386 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "tips@androidcentral.com (Nickolas Diaz)",
+        "title": "Galaxy S24 sales reportedly rise in 'key' markets globally to beat the S23",
+        "description": "A new report stated Samsung's Galaxy S24 series has experienced a growth in sales globally.",
+        "url": "https://www.androidcentral.com/phones/galaxy-s24-sales-increase-markets-globally-report",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/J8ViYCdxbKzymYykhUsuq9-1200-80.jpg",
+        "publishedAt": "2024-03-11T21:32:34Z",
+        "content": "<ul><li>A report courtesy of data from Counterpoint Research shows Samsung's Galaxy S24 has experienced a growth in sales in \"key\" regions.</li><li>The series' sales reportedly grew by 14% in the U.S… [+2327 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "vishnu.skar@gmail.com (Vishnu Sarangapurkar)",
+        "title": "Motorola Edge 50 Fusion renders leak ahead of anticipated April launch",
+        "description": "While we just heard about the Edge 50 Pro launch, a new leak reveals that a new Edge 50 Fusion is launching next to it.",
+        "url": "https://www.androidcentral.com/phones/motorola-edge-50-fusion-launch-april-3-2024",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/53T5ZidvFeqd4CMqYNSjQm-1200-80.jpg",
+        "publishedAt": "2024-03-25T20:41:16Z",
+        "content": "What you need to know\r\n<ul><li>The latest Motorola Edge 50 Fusion renders have now leaked, showing the entirety of the device.</li><li>It will feature at least three colorways and IP68 water resistan… [+2215 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Android Central"
+        },
+        "author": "stevenshaw444@gmail.com (Steven Shaw)",
+        "title": "WhatsApp has started blocking screenshots of profile pictures",
+        "description": "WhatsApp has started rolling out screenshot blocking for profile pictures on the stable version of the app.",
+        "url": "https://www.androidcentral.com/apps-software/whatsapp-has-started-blocking-screenshots-of-profile-pictures",
+        "urlToImage": "https://cdn.mos.cms.futurecdn.net/C4TGRtjzz5cBSzUAhCrqhc-1200-80.jpg",
+        "publishedAt": "2024-03-13T17:24:41Z",
+        "content": "<ul><li>Screenshot blocking for profile pictures on WhatsApp is being rolled out.</li><li>The feature hasn’t been officially confirmed by WhatsApp, but it appears on the stable version of the app for… [+2124 chars]"
+        },
+        {
+        "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Airlines are roaring back in places you might not expect",
+        "description": "The rebound is well under way in young, emerging economies where spending power is on the rise.",
+        "url": "https://www.bbc.co.uk/news/business-68573429",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2D2B/production/_133036511_gettyimages-1689521241.jpg",
+        "publishedAt": "2024-03-29T00:44:48Z",
+        "content": "When India's Tata Group bought the country's national airline, it was welcomed as something of a miracle. \r\nAir India had been mired in debt and under-funded state management for decades. No-one want… [+6473 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Playstation.com"
+        },
+        "author": "Hector R Fernandez",
+        "title": "Revealing 5 India Hero Project games coming to PlayStation",
+        "description": "PlayStation has been part of India’s vibrant gaming scene for over two decades. In May 2023, we embarked on an ambitious journey with the India Hero Project. We aimed to unearth and empower India’s brightest game development talents to share their unique visi…",
+        "url": "https://blog.playstation.com/2024/03/05/revealing-5-india-hero-project-games-coming-to-playstation/",
+        "urlToImage": "https://blog.playstation.com/tachyon/2024/03/947768ff409c3e430f0649f6a3cf38bdb9216956.jpg",
+        "publishedAt": "2024-03-05T15:01:02Z",
+        "content": "PlayStation has been part of India’s vibrant gaming scene for over two decades. In May 2023, we embarked on an ambitious journey with the India Hero Project. We aimed to unearth and empower India’s b… [+4698 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Hipertextual"
+        },
+        "author": "Quelian Sanz",
+        "title": "Las tiendas de Amazon no son tan inteligentes: funcionan con miles de personas vigilando a través de cámaras",
+        "description": "Amazon se está enfrentando a una nueva polémica tras comenzar a eliminar su sistema Just Walk Out de las tiendas Amazon Fresh. La compañía ha confirmado que está dejando de utilizar la tecnología que permitía a los usuarios entrar, coger cualquier producto y …",
+        "url": "http://hipertextual.com/2024/04/las-tiendas-de-amazon-no-son-tan-inteligentes-funcionan-con-miles-de-personas-vigilando-a-traves-de-camaras",
+        "urlToImage": "https://imgs.hipertextual.com/wp-content/uploads/2024/04/a9801f22-0afb-4ae2-977c-f2bd5738bd69_8256x5504-scaled.jpg",
+        "publishedAt": "2024-04-03T09:51:05Z",
+        "content": "Amazon se está enfrentando a una nueva polémica tras comenzar a eliminar su sistema Just Walk Out de las tiendas Amazon Fresh. La compañía ha confirmado que está dejando de utilizar la tecnología que… [+2818 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Theregister.com"
+        },
+        "author": "Laura Dobberstein",
+        "title": "Vigorous US lobbying reportedly reversed India PC import license scheme",
+        "description": "Washington was most displeased and New Delhi knew it made a mistake\nIndia was subjected to intense US lobbying after suddenly imposing a requirement that computer importers obtain a license, according to a news report on Thursday.…",
+        "url": "https://www.theregister.com/2024/03/22/us_lobbies_india_pc_license/",
+        "urlToImage": "https://regmedia.co.uk/2021/02/25/india.jpg",
+        "publishedAt": "2024-03-22T05:46:51Z",
+        "content": "India was subjected to intense US lobbying after suddenly imposing a requirement that computer importers obtain a license, according to a news report on Thursday.\r\nIndia's regulation was announced in… [+2477 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+        },
+        "author": null,
+        "title": "India announces steps to implement a citizenship law that excludes Muslims",
+        "description": null,
+        "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_bb03a5dc-5a5c-4ffe-b93a-70c39b9158ef",
+        "urlToImage": null,
+        "publishedAt": "2024-03-11T15:00:43Z",
+        "content": "Si vous cliquez sur « Tout accepter », nos partenaires (y compris 241 qui font partie du Cadre de transparence et de consentement dIAB) et nous utiliserons également des témoins et vos données person… [+982 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "ReadWrite"
+        },
+        "author": "Rachael Davis",
+        "title": "Google opens new cyberdefense hub in Japan",
+        "description": "Google has established its very first Asia-Pacific cyberdefense hub in Tokyo, with rising concern about threats from China and others… Continue reading Google opens new cyberdefense hub in Japan\nThe post Google opens new cyberdefense hub in Japan appeared fir…",
+        "url": "https://readwrite.com/google-opens-new-cyberdefense-hub-in-japan/",
+        "urlToImage": "https://readwrite.com/wp-content/uploads/2024/03/iedoCct2StG69N9nyZyhFQ.png",
+        "publishedAt": "2024-03-07T12:39:18Z",
+        "content": "Google has established its very first Asia-Pacific cyberdefense hub in Tokyo, with rising concern about threats from China and others in the region.\r\nOn Thursday, the US-based company opened a new fa… [+1842 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "ReadWrite"
+        },
+        "author": "Charlotte Colombo",
+        "title": "Apple settles lawsuit over CEO China comments",
+        "description": "Apple has agreed to pay $490 million to settle a class-action lawsuit. The suit alleges that Tim Cook, Apple’s chief… Continue reading Apple settles lawsuit over CEO China comments\nThe post Apple settles lawsuit over CEO China comments appeared first on ReadW…",
+        "url": "https://readwrite.com/apple-settles-lawsuit-over-ceo-china-comments/",
+        "urlToImage": "https://readwrite.com/wp-content/uploads/2024/03/Apple-Settles-lawsuit.jpg",
+        "publishedAt": "2024-03-15T18:55:49Z",
+        "content": "Apple has agreed to pay $490 million to settle a class-action lawsuit. The suit alleges that Tim Cook, Apples chief executive, defrauded shareholders by hiding the fact that iPhone demand was falling… [+1634 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Openculture.com"
+        },
+        "author": "Colin Marshall",
+        "title": "The Oldest Known Photographs of India (1863–1870)",
+        "description": "After about a century of indirect company rule, India became a full-fledged British colony in 1858. The consequences of this political development remain a matter of heated debate today, but one thing is certain: it made India into a natural destination for e…",
+        "url": "https://www.openculture.com/2024/03/the-oldest-known-photographs-of-india-1863-1870.html",
+        "urlToImage": "https://cdn8.openculture.com/2024/03/25224840/Screenshot-2024-03-25-at-10.47.15%E2%80%AFPM-1-1024x608.png",
+        "publishedAt": "2024-03-26T09:00:30Z",
+        "content": "After about a cen­tu­ry of indi­rect com­pa­ny rule, India became a full-fledged British colony in 1858. The con­se­quences of this polit­i­cal devel­op­ment remain a mat­ter of heat­ed debate today,… [+3277 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "Slashdot.org"
+        },
+        "author": "BeauHD",
+        "title": "Why the US Could Be On the Cusp of a Productivity Boom",
+        "description": "Neil Irwin reports via Axios: The dearth of productivity growth over the last couple of decades has held back incomes in the U.S. and other rich countries, according to a report out Wednesday from the McKinsey Global Institute, the research arm of the global …",
+        "url": "https://news.slashdot.org/story/24/03/27/2315212/why-the-us-could-be-on-the-cusp-of-a-productivity-boom",
+        "urlToImage": "https://a.fsdn.com/sd/topics/business_64.png",
+        "publishedAt": "2024-03-28T01:25:00Z",
+        "content": "The dearth of productivity growth over the last couple of decades has held back incomes in the U.S. and other rich countries, according to a report out Wednesday from the McKinsey Global Institute, t… [+2347 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Mikhaila Friel",
+        "title": "Indian and Nepalese men say they were tricked into fighting for Russia in Ukraine and can't return home",
+        "description": "Indian and Nepalese men told The Guardian that they had been pressured into signing military contracts written in Russian.",
+        "url": "https://www.businessinsider.com/russia-ukraine-war-indian-nepalese-men-tricked-front-lines-2024-3",
+        "urlToImage": "https://i.insider.com/65e9bb6bce7f1785b2e740b5?width=1200&format=jpeg",
+        "publishedAt": "2024-03-07T16:18:24Z",
+        "content": "Russia's President Vladimir Putin.Artem Geodakyan/POOL/AFP via Getty Images\r\n<ul><li>Indian and Nepalese men are being coerced into fighting for Russia against Ukraine, a report said.</li><li>The men… [+5340 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Filip De Mott",
+        "title": "China needs Apple even as it tries to push foreign firms out, economist says",
+        "description": "China is trying to disinvest itself of firms that could create a national security risk, Shehzad Qazi told CNBC. But Apple is too important to it.",
+        "url": "https://www.businessinsider.com/china-apple-iphone-security-risk-semiconductors-foreign-direct-investment-ives-2024-3",
+        "urlToImage": "https://i.insider.com/660190763f923f7dab00cc35?width=1200&format=jpeg",
+        "publishedAt": "2024-03-25T17:37:10Z",
+        "content": "The Chinese national flag is displayed in front of an Apple store in Shanghai on October 9, 2021.HECTOR RETAMAL\r\n<ul>\n<li>China is unlikely to push Apple out of the country, Shehzad Qazi of China Bei… [+2353 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Huileng Tan",
+        "title": "Russia has finally admitted Western sanctions are hitting its oil exports",
+        "description": "Secondary sanctions are spooking global banks, as some of them turn away from doing business with Russia.",
+        "url": "https://www.businessinsider.com/russia-economy-west-secondary-sanctions-hitting-oil-exports-payments-revenue-2024-3",
+        "urlToImage": "https://i.insider.com/6600e0991caec1275a68d716?width=1200&format=jpeg",
+        "publishedAt": "2024-03-25T09:04:08Z",
+        "content": "Russia's President Vladimir Putin.Artem Geodakyan/POOL/AFP via Getty Images\r\n<ul><li>Russia's oil industry is facing challenges due to intensified Western sanctions.</li><li>Secondary sanctions are s… [+2008 chars]"
+        },
+        {
+        "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+        },
+        "author": "Huileng Tan",
+        "title": "Putin wasted no time buttering up China after his election victory",
+        "description": "In the wake of sweeping sanctions, Russia's Putin is leaning on China for economic and political support.",
+        "url": "https://www.businessinsider.com/russia-economy-putin-praises-china-after-election-victory-taiwan-2024-3",
+        "urlToImage": "https://i.insider.com/65f8f1cc4af076d3cf9187f9?width=1200&format=jpeg",
+        "publishedAt": "2024-03-19T06:14:21Z",
+        "content": "Russian President Vladimir Putin and Chinese leader Xi Jinping in Beijing on October 17, 2023.Sergei Savostyanov/Pool/AFP/Getty Images\r\n<ul><li>Russian President Vladimir Putin praised China and tout… [+2627 chars]"
+        }
+        ]
+        }
+        )
 })
 
-app.listen( PORT, ()=>{
-  console.log(`server is listening on ${PORT}`);
-})
+app.listen(PORT, hostname, backlog)
